@@ -197,21 +197,6 @@ export default function MairaHeroSection() {
               </Link>
             </div>
 
-            {/* Guest Rating & Reviews Social Proof */}
-            <div className="mt-3.5 sm:mt-5 pt-3 sm:pt-4 border-t border-[#183b32]/10 flex items-center gap-2.5 sm:gap-3">
-              <div className="flex -space-x-2 shrink-0">
-                <div className="w-7 h-7 rounded-full bg-[#b59a6a] text-white text-[10.5px] font-bold flex items-center justify-center border-2 border-[#f9f6f0] shadow-xs">
-                  T
-                </div>
-                <div className="w-7 h-7 rounded-full bg-[#183b32] text-white text-[10.5px] font-bold flex items-center justify-center border-2 border-[#f9f6f0] shadow-xs">
-                  M
-                </div>
-              </div>
-              <div className="text-[11px] sm:text-xs text-[#525d58] leading-tight">
-                <span className="font-bold text-[#183b32]">5.0 / 5.0 Rating</span> &middot; Verified by Tanuja M, Mahesh babu &amp; guests
-              </div>
-            </div>
-
           </div>
 
         </div>
