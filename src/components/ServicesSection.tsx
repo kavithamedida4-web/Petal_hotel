@@ -103,11 +103,6 @@ export default function ServicesSection() {
                 className="object-cover group-hover:scale-106 transition-transform duration-500"
                 sizes="(max-width: 768px) 310px, 380px"
               />
-              {svc.price && (
-                <div className="absolute top-3 right-3 bg-[#183b32]/90 backdrop-blur-xs text-[#faf7f2] px-3 py-1 rounded-full text-xs font-semibold shadow-md border border-[#b59a6a]/40">
-                  {svc.price}
-                </div>
-              )}
             </div>
 
             {/* Clean Gold/tan info bar with uniform fixed height across all cards */}
