@@ -6,38 +6,41 @@ import { ArrowLeft, ArrowRight } from "lucide-react";
 
 const services = [
   {
-    title: "Standard Room (Twin Bed)",
-    subtitle: "Two single beds with fresh linens, attached clean bathroom, air conditioning, and fast Wi-Fi",
-    img: "/images/petal_room_twin.jpg",
-  },
-  {
     title: "Deluxe Room",
-    subtitle: "Spacious king-size bed, private balcony, warm lighting, flat-screen TV, and tea/coffee maker",
+    subtitle: "1 king bed, up to 3 adults. Includes AC, TV, balcony, and attached bathroom.",
+    price: "From ₹2,500 / night",
     img: "/images/petal_card_deluxe.jpg",
   },
   {
-    title: "Executive Deluxe Room",
-    subtitle: "Generous suite layout with dedicated work desk, comfortable sofa seating, and extra luggage space",
+    title: "Twin Room",
+    subtitle: "2 single beds, up to 2 adults. Includes AC, TV, balcony, and attached bathroom.",
+    price: "From ₹2,500 / night",
+    img: "/images/petal_room_twin.jpg",
+  },
+  {
+    title: "Suite Room",
+    subtitle: "1 king bed and living area, up to 3 adults. Includes AC, TV, balcony, and attached bathroom.",
+    price: "From ₹3,500 / night",
     img: "/images/petal_room_executive.jpg",
   },
   {
-    title: "Fine Dining Restaurant",
-    subtitle: "Freshly prepared South & North Indian dishes, daily morning breakfast buffet, and late-night room service",
+    title: "In-House Restaurant & Room Service",
+    subtitle: "Freshly prepared South & North Indian dishes, daily breakfast, and 24-hr in-room dining.",
     img: "/images/petal_card_dining.jpg",
   },
   {
-    title: "Infinity Swimming Pool",
-    subtitle: "Open rooftop pool with fresh towels and comfortable loungers to unwind after a long journey",
-    img: "/images/petal_service_pool.jpg",
-  },
-  {
-    title: "Spa & Wellness Centre",
-    subtitle: "Therapeutic body massages, Ayurvedic treatments, and herbal steam room for total relaxation",
+    title: "24-Hour Front Desk & Power Backup",
+    subtitle: "12:00 noon check-in/out, 100% generator power backup, and round-the-clock reception.",
     img: "/images/petal_service_spa.jpg",
   },
   {
-    title: "Airport Transfer",
-    subtitle: "Reliable 24/7 private car pick-up and drop-off directly to Rajiv Gandhi International Airport terminals",
+    title: "Lift & Free On-Site Parking",
+    subtitle: "Smooth elevator access across all 47 rooms, plus secure vehicle parking with CCTV monitoring.",
+    img: "/images/petal_service_pool.jpg",
+  },
+  {
+    title: "24/7 Airport Transfer Assistance",
+    subtitle: "Quick, dependable pick-up and drop-off to Rajiv Gandhi International Airport (RGIA) in Shamshabad.",
     img: "/images/petal_airport_transfer_chauffeur.jpg",
   },
 ];
@@ -100,6 +103,11 @@ export default function ServicesSection() {
                 className="object-cover group-hover:scale-106 transition-transform duration-500"
                 sizes="(max-width: 768px) 310px, 380px"
               />
+              {svc.price && (
+                <div className="absolute top-3 right-3 bg-[#183b32]/90 backdrop-blur-xs text-[#faf7f2] px-3 py-1 rounded-full text-xs font-semibold shadow-md border border-[#b59a6a]/40">
+                  {svc.price}
+                </div>
+              )}
             </div>
 
             {/* Clean Gold/tan info bar with uniform fixed height across all cards */}

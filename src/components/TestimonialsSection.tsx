@@ -7,30 +7,30 @@ const testimonials = [
   {
     rating: 5,
     quote:
-      "I had an early 6:00 AM flight out of Hyderabad. Booked Petal Hotel for one night. The driver was already waiting outside when I checked out at 3:45 AM, and we reached the airport terminal in under 10 minutes. The room was clean, AC was powerful, and water was hot. Exactly what I needed.",
+      "Had a wonderful stay! The room was clean, comfortable, and well-maintained. The hospitality was great, and the overall experience was pleasant. Would definitely recommend this place for couples and family.",
+    author: "Tanuja M.",
+    location: "Family & Couple Stay",
+  },
+  {
+    rating: 5,
+    quote:
+      "I had a wonderful experience at The Pearl Hotel Hyderabad. The rooms were clean, spacious, and comfortable. The staff was very polite, friendly, and helpful. The hospitality and service were excellent, and the overall atmosphere was pleasant. The hotel is a great choice for both business and family travellers. Highly recommended for anyone looking for a comfortable and enjoyable stay in Hyderabad!",
+    author: "Mahesh babu",
+    location: "Business & Family Traveler",
+  },
+  {
+    rating: 5,
+    quote:
+      "We had an early morning flight from RGIA Shamshabad. The 12:00 noon check-in was smooth, the room had strong AC, hot water, and a nice balcony. The staff helped arrange an airport cab at 4:00 AM without any delay. Excellent budget property near the airport.",
     author: "Rajeshwar Rao",
-    location: "Hyderabad",
+    location: "Transit Guest",
   },
   {
     rating: 5,
     quote:
-      "We had an 8-hour flight layover with elderly parents. Reached out to the hotel team on WhatsApp, and they arranged a quick airport pick-up. The staff helped carry all our bags, check-in took 2 minutes, and we got hot South Indian dinner delivered right to our room. Very polite and helpful team.",
-    author: "Priyanka M.",
-    location: "Hyderabad",
-  },
-  {
-    rating: 5,
-    quote:
-      "Came down from Bangalore for a business meeting near the Shamshabad airport zone. The room had a good working desk, strong Wi-Fi, and the mattress was genuinely comfortable. Plus, it was completely quiet at night with no flight noise.",
-    author: "Vikramaditya K.",
-    location: "Bengaluru",
-  },
-  {
-    rating: 5,
-    quote:
-      "Cleanest and most hassle-free hotel stay near Shamshabad Airport. Fresh bedsheets, spotless bathroom with clean towels, and the breakfast buffet had hot dosas, idlis, and good coffee. Excellent value for money compared to expensive terminal hotels.",
+      "Very neat and well-maintained 47-room hotel. The lift, power backup, and fast Wi-Fi made our work trip comfortable. Room service food was fresh and served hot. Great value for money in Shamshabad.",
     author: "Dr. Sandhya Reddy",
-    location: "Hyderabad",
+    location: "Business Guest",
   },
 ];
 
@@ -56,7 +56,7 @@ export default function TestimonialsSection() {
 
           {/* Subtitle Description */}
           <p className="text-xs sm:text-sm text-[#525d58] leading-relaxed max-w-xl mx-auto">
-            Genuine reviews from travelers, families, and business guests who stayed at Petal Hotel.
+            Genuine reviews from travelers, families, and business guests who stayed at The Pearl Hotel Hyderabad.
           </p>
         </div>
 

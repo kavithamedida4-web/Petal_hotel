@@ -43,10 +43,10 @@ export default function MairaHeroSection() {
             </svg>
             <div className="flex flex-col">
               <span className="font-serif text-lg sm:text-xl font-medium tracking-tight text-[#183b32] leading-none">
-                Petal
+                The Pearl
               </span>
-              <span className="text-[7.5px] sm:text-[8px] font-bold tracking-[0.25em] text-[#7d756d] uppercase mt-0.5">
-                HOTEL
+              <span className="text-[7px] sm:text-[7.5px] font-bold tracking-[0.2em] text-[#7d756d] uppercase mt-0.5">
+                HOTEL &middot; HYDERABAD
               </span>
             </div>
           </Link>
@@ -151,16 +151,16 @@ export default function MairaHeroSection() {
             <div className="flex items-center gap-1.5 sm:gap-2 mb-2 sm:mb-5">
               <span className="w-1.5 h-1.5 rounded-full bg-[#a0856c] inline-block shrink-0" />
               <span className="text-[9.5px] sm:text-[11px] font-bold tracking-[0.14em] sm:tracking-[0.2em] text-[#a0856c] uppercase">
-                <span className="sm:hidden">LUXURY PREMIUM HOTEL &middot; SHAMSHABAD</span>
-                <span className="hidden sm:inline">LUXURY PREMIUM HOTEL - SHAMSHABAD, HYDERABAD</span>
+                <span className="sm:hidden">THE PEARL HOTEL &middot; NEAR HYDERABAD AIRPORT</span>
+                <span className="hidden sm:inline">THE PEARL HOTEL HYDERABAD - 47 ROOMS NEAR RGIA AIRPORT</span>
               </span>
             </div>
 
             {/* Main Headline highlighting SHAMSHABAD - font-serif font-semibold (weight 600) */}
             <h1 className="font-serif font-semibold text-[28px] sm:text-[36px] lg:text-[44px] leading-tight text-[#183b32] tracking-tight mb-2 sm:mb-3">
-              Luxury premium<br />
-              hotel in<br />
-              <span className="text-[#b59a6a]">Shamshabad</span>
+              Comfort, elegance &amp;<br />
+              hospitality near<br />
+              <span className="text-[#b59a6a]">Hyderabad Airport</span>
             </h1>
 
             {/* Decorative Subtle Line */}
@@ -169,10 +169,10 @@ export default function MairaHeroSection() {
             {/* Subtitle / Description Copy - Compact on mobile, full on desktop */}
             <p className="text-[#525d58] text-[11.5px] sm:text-[13px] leading-relaxed max-w-[390px] font-normal mb-3 sm:mb-8">
               <span className="sm:hidden">
-                Comfortable hotel in <strong className="text-[#b59a6a] font-semibold">Shamshabad</strong>, just 10 minutes from Rajiv Gandhi International Airport with quiet rooms, good food, and 24/7 airport cab service.
+                47 well-appointed rooms in <strong className="text-[#b59a6a] font-semibold">Shamshabad</strong>, minutes from RGIA Airport with AC, TV, balcony, lift, power backup &amp; 24-hr front desk.
               </span>
               <span className="hidden sm:inline">
-                Welcome to <strong className="text-[#183b32] font-semibold">Petal Hotel</strong> in <strong className="text-[#b59a6a] font-semibold">Shamshabad</strong>, Hyderabad. Located just 10 minutes from Rajiv Gandhi International Airport, we offer clean, comfortable rooms, fresh multi-cuisine dining, and round-the-clock airport transfers for a peaceful rest.
+                Welcome to <strong className="text-[#183b32] font-semibold">The Pearl Hotel Hyderabad</strong>, offering 47 comfortable rooms in <strong className="text-[#b59a6a] font-semibold">Shamshabad</strong> near Rajiv Gandhi International Airport. Welcoming families, couples, business travellers, tourists, pilgrims, and groups.
               </span>
             </p>
 
@@ -187,7 +187,7 @@ export default function MairaHeroSection() {
               </Link>
 
               <Link
-                href="https://wa.me/919100048478"
+                href="https://wa.me/918106665517"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="px-3 py-2.5 sm:px-5 sm:py-3 rounded-lg bg-white hover:bg-[#f3eee5] border border-[#183b32]/35 text-[#183b32] text-[11px] sm:text-xs font-semibold tracking-wide transition-all flex items-center justify-center gap-1.5 shadow-xs whitespace-nowrap"

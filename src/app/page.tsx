@@ -13,13 +13,13 @@ import FooterSection from "@/components/FooterSection";
 export default function Home() {
   return (
     <main className="min-h-screen bg-[#f9f6f0] text-[#183b32] flex flex-col selection:bg-[#183b32] selection:text-white overflow-x-hidden w-full">
-      {/* 1. Petal Hotel Hero */}
+      {/* 1. The Pearl Hotel Hyderabad Hero */}
       <MairaHeroSection />
 
       {/* 2. Hotel Rooms & Services with Horizontal Scroll */}
       <ServicesSection />
 
-      {/* 3. About Us - Petal Hotel */}
+      {/* 3. About Us - The Pearl Hotel Hyderabad */}
       <AboutUsSection />
 
       {/* 4. How It Works - Organic Curved Visual with 4 Steps */}

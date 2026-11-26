@@ -33,7 +33,7 @@ export default function ContactSection() {
     setSubmitted(true);
 
     const messageLines = [
-      `*New Reservation / Inquiry - Petal Hotel*`,
+      `*New Reservation / Inquiry - The Pearl Hotel Hyderabad*`,
       `---------------------------------------`,
       `👤 *Name:* ${formData.name}`,
       `📞 *Phone:* ${formData.phone}`,
@@ -44,11 +44,11 @@ export default function ContactSection() {
       `📅 *Check-out Date:* ${formData.checkOut || "Not specified"}`,
       `📝 *Special Requests:* ${formData.message || "None"}`,
       `---------------------------------------`,
-      `Sent via Petal Hotel Website`,
+      `Sent via The Pearl Hotel Hyderabad Website`,
     ];
 
     const encodedText = encodeURIComponent(messageLines.join("\n"));
-    const whatsappUrl = `https://wa.me/919100048478?text=${encodedText}`;
+    const whatsappUrl = `https://wa.me/918106665517?text=${encodedText}`;
 
     // Open WhatsApp with pre-filled form info
     if (typeof window !== "undefined") {
@@ -71,7 +71,7 @@ export default function ContactSection() {
           </h2>
 
           <p className="text-xs text-[#525d58] leading-relaxed">
-            Book your room directly with our front desk in <strong className="text-[#b59a6a] font-semibold">Shamshabad, Hyderabad</strong>. We will confirm your reservation and arrange your airport transfer right away.
+            Book your room directly with our front desk at <strong className="text-[#b59a6a] font-semibold">The Pearl Hotel Hyderabad</strong> in Shamshabad. We confirm reservations promptly with 12:00 noon check-in/out and 24/7 airport transfer assistance.
           </p>
         </div>
 
@@ -90,12 +90,12 @@ export default function ContactSection() {
                 Booking Request Sent!
               </h3>
               <p className="text-xs text-[#525d58] max-w-sm leading-relaxed mb-4">
-                Thank you, <span className="font-semibold text-[#183b32]">{formData.name || "Guest"}</span>. Your booking request has been sent directly to our front desk team at <span className="font-semibold text-[#183b32]">+91 91000 48478</span>. We will contact you shortly.
+                Thank you, <span className="font-semibold text-[#183b32]">{formData.name || "Guest"}</span>. Your booking request has been sent directly to our front desk team at <span className="font-semibold text-[#183b32]">+91 81066 65517</span>. We will contact you shortly.
               </p>
               <div className="flex flex-wrap items-center justify-center gap-3">
                 <a
-                  href={`https://wa.me/919100048478?text=${encodeURIComponent(
-                    `*Reservation Inquiry - Petal Hotel*\nName: ${formData.name}\nPhone: ${formData.phone}\nSuite: ${formData.roomType}\nGuests: ${formData.guests}`
+                  href={`https://wa.me/918106665517?text=${encodeURIComponent(
+                    `*Reservation Inquiry - The Pearl Hotel Hyderabad*\nName: ${formData.name}\nPhone: ${formData.phone}\nSuite: ${formData.roomType}\nGuests: ${formData.guests}`
                   )}`}
                   target="_blank"
                   rel="noopener noreferrer"
@@ -197,11 +197,11 @@ export default function ContactSection() {
                     onChange={(e) => setFormData({ ...formData, roomType: e.target.value })}
                     className="w-full px-3 py-2 rounded-lg sm:rounded-xl bg-[#fcfaf7] border border-[#e2dacb] text-[#183b32] text-xs sm:text-[13px] focus:outline-none focus:border-[#183b32] transition-all cursor-pointer"
                   >
-                    <option>Standard Room (Twin Bed)</option>
-                    <option>Deluxe Room</option>
-                    <option>Executive Deluxe Room</option>
-                    <option>Petal Presidential Suite</option>
-                    <option>Dining &amp; Event Booking</option>
+                    <option>Deluxe Room (1 King Bed, up to 3 adults • from ₹2,500)</option>
+                    <option>Twin Room (2 Single Beds, up to 2 adults • from ₹2,500)</option>
+                    <option>Suite Room (1 King Bed + Living Area, up to 3 adults • from ₹3,500)</option>
+                    <option>Group / Event Booking (47 Rooms Available)</option>
+                    <option>Day Rest / Airport Layover Stay</option>
                   </select>
                 </div>
 
@@ -260,7 +260,7 @@ export default function ContactSection() {
                 </label>
                 <textarea
                   rows={2}
-                  placeholder="Let us know your arrival time, early check-in needs, or flight details for airport pick-up..."
+                  placeholder="Mention extra bed (₹999/night), arrival time, early check-in, or airport pick-up flight details..."
                   value={formData.message}
                   onChange={(e) => setFormData({ ...formData, message: e.target.value })}
                   className="w-full px-3 py-2 rounded-lg sm:rounded-xl bg-[#fcfaf7] border border-[#e2dacb] text-[#183b32] placeholder:text-[#a8a194] text-xs sm:text-[13px] focus:outline-none focus:border-[#183b32] focus:bg-white focus:ring-1 focus:ring-[#183b32]/20 transition-all resize-none"

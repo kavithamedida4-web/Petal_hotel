@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Petal Hotel - Luxury Premium Hotel in Shamshabad, Hyderabad",
-  description: "Experience 5-star premium luxury stays, fine dining, and 24/7 airport transfers at Petal Hotel in Shamshabad, Hyderabad near Rajiv Gandhi International Airport.",
+  title: "The Pearl Hotel Hyderabad - Hotel near RGIA Shamshabad Airport",
+  description: "Comfort, Elegance & Hospitality – Your Perfect Stay Near Hyderabad Airport. 47 comfortable rooms in Shamshabad with AC, TV, balcony, attached bathroom, 24-hr front desk, and airport transfers.",
 };
 
 export default function RootLayout({

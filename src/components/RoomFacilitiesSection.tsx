@@ -115,10 +115,10 @@ export default function RoomFacilitiesSection() {
       {/* Section Heading */}
       <div className="max-w-3xl mx-auto px-4 mb-8 sm:mb-12 text-center">
         <h2 className="font-serif font-semibold text-[28px] sm:text-[36px] lg:text-[44px] leading-tight text-[#183b32] tracking-tight">
-          Facilities at <span className="text-[#b59a6a]">Petal Hotel</span>
+          Facilities at <span className="text-[#b59a6a]">The Pearl Hotel</span>
         </h2>
         <p className="text-xs sm:text-sm text-[#5a6560] mt-2 max-w-lg mx-auto leading-relaxed">
-          Everything you need for a restful stay: powerful air conditioning, high-speed Wi-Fi, fresh hot meals, and 24-hour front desk assistance.
+          47 well-appointed rooms with Free Wi-Fi, AC, Parking, In-house Restaurant, 24-hr Front Desk, Power Backup, Lift &amp; CCTV Security in Shamshabad.
         </p>
       </div>
 

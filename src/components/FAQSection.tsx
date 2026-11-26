@@ -6,51 +6,51 @@ import { ChevronUp, ChevronDown } from "lucide-react";
 const faqs = [
   {
     id: 1,
-    question: "How far is Petal Hotel from Rajiv Gandhi International Airport (HYD)?",
+    question: "Where is The Pearl Hotel Hyderabad located, and how far is it from the airport?",
     answer:
-      "We are located in Shamshabad, about 10 minutes (approximately 6 km) from the airport terminal. You can easily reach us by taxi or request our private airport pick-up service.",
+      "We are located at PL NO 75/EP, Sai Pramukh Enclave, Devatha Bowli, ThonduPally, Shamshabad, Hyderabad 501218, just minutes from Rajiv Gandhi International Airport (RGIA). We can also assist with 24/7 airport pick-up and drop-off.",
   },
   {
     id: 2,
-    question: "What are your check-in and check-out times? Is early check-in allowed?",
+    question: "What are the standard check-in and check-out timings?",
     answer:
-      "Standard check-in is at 12:00 PM (noon) and check-out is at 11:00 AM. If you have an early morning flight or late-night arrival, please let us know on WhatsApp in advance. We provide early check-in whenever rooms are available.",
+      "Both check-in and check-out are at 12:00 noon. If you need early check-in or late check-out due to flight timings, please connect with our front desk on WhatsApp (+91 81066 65517) in advance.",
   },
   {
     id: 3,
-    question: "How do I arrange 24/7 airport pick-up or drop-off?",
+    question: "What room types are available, and what are the starting rates?",
     answer:
-      "Our airport transfer service runs 24 hours a day. Simply share your flight number and landing time with our front desk via WhatsApp or phone call, and our driver will meet you outside the arrival gate.",
+      "We offer 3 comfortable room categories: Deluxe Room (1 king bed, up to 3 adults, from ₹2,500/night), Twin Room (2 single beds, up to 2 adults, from ₹2,500/night), and Suite Room (1 king bed + living area, up to 3 adults, from ₹3,500/night). All rooms feature AC, a TV, a balcony, and an attached bathroom. Extra bed is available for ₹999/night.",
   },
   {
     id: 4,
-    question: "Is breakfast included, and what are the restaurant timings?",
+    question: "What payment methods do you accept?",
     answer:
-      "Yes, freshly prepared breakfast is served daily from 7:00 AM to 10:30 AM featuring South Indian dishes (idli, vada, dosa), North Indian parathas, eggs, toast, and hot tea/coffee. Round-the-clock in-room dining is also available.",
+      "We accept Cash, UPI (Google Pay, PhonePe, Paytm, BHIM), Debit and Credit Cards (Visa, MasterCard, RuPay), and Net Banking.",
   },
   {
     id: 5,
-    question: "Is high-speed Wi-Fi available in the rooms for work?",
+    question: "What is your cancellation and date change policy?",
     answer:
-      "Yes, high-speed Wi-Fi is free for all guests across the entire hotel, including bedrooms and the lobby, with reliable bandwidth for video meetings and remote work.",
+      "For cancellations or date changes, please contact the hotel directly at +91 81066 65517. Cancellation charges may apply depending on the booking terms and how early you notify us.",
   },
   {
     id: 6,
-    question: "Do you have free parking space for personal vehicles?",
+    question: "What amenities are provided during the stay?",
     answer:
-      "Yes, we provide secure, free on-site car parking with 24/7 CCTV surveillance and security staff on duty.",
+      "Guests enjoy Free high-speed Wi-Fi, Air Conditioning, Free On-Site Parking, In-House Restaurant, 24-Hour Room Service, 24-Hour Front Desk, 100% Power Backup, Lift / Elevator to all floors, and CCTV Security.",
   },
   {
     id: 7,
-    question: "What identity documents are needed at check-in?",
+    question: "What identity documents and house rules must guests follow?",
     answer:
-      "All staying adult guests must present an original government-issued photo ID (Aadhaar Card, Passport, Driving License, or Voter ID). As per local hotel guidelines, PAN cards cannot be used as address proof.",
+      "All adult guests must present an original government-issued photo ID (Aadhaar, Passport, Driving License, or Voter ID; PAN card is not valid address proof). Smoking is restricted to permitted areas. Quiet hours are observed at night. Pets require prior management approval.",
   },
   {
     id: 8,
-    question: "Can I book directly through WhatsApp or phone call?",
+    question: "How can I book a room or contact hotel reception?",
     answer:
-      "Yes, absolutely. You can WhatsApp or call us directly at +91 91000 48478 for quick room booking, special group rates, and immediate booking confirmation without any extra portal fees.",
+      "You can call or WhatsApp our guest reception directly at +91 81066 65517, or email info@pearlhotelhyderabad.com for instant booking confirmation without any portal commissions.",
   },
 ];
 

@@ -135,7 +135,7 @@ export default function GallerySection() {
             {mobileImages.map((img) => (
               <div
                 key={img.id}
-                onClick={() => setSelectedImg({ src: img.src, title: img.title, album: "Gallery", tag: "Petal Hotel" })}
+                onClick={() => setSelectedImg({ src: img.src, title: img.title, album: "Gallery", tag: "The Pearl Hotel" })}
                 className="relative aspect-square overflow-hidden cursor-pointer bg-[#1c1e24] active:opacity-75 transition-opacity rounded-sm"
               >
                 <Image
@@ -206,7 +206,7 @@ export default function GallerySection() {
             <div className="relative w-full h-[65vh] sm:h-[80vh]">
               <Image
                 src={selectedImg.src}
-                alt="Petal Hotel Gallery"
+                alt="The Pearl Hotel Hyderabad Gallery"
                 fill
                 className="object-contain"
                 sizes="95vw"

@@ -29,17 +29,17 @@ export default function FooterSection() {
               </svg>
               <div className="flex flex-col">
                 <span className="font-serif text-xl sm:text-2xl font-medium tracking-tight text-white leading-none">
-                  Petal
+                  The Pearl
                 </span>
-                <span className="text-[8px] sm:text-[9px] font-bold tracking-[0.25em] text-[#b59a6a] uppercase mt-1">
-                  HOTEL &middot; SHAMSHABAD
+                <span className="text-[7.5px] sm:text-[8px] font-bold tracking-[0.2em] text-[#b59a6a] uppercase mt-1">
+                  HOTEL &middot; HYDERABAD
                 </span>
               </div>
             </Link>
 
             {/* Description */}
             <p className="text-xs sm:text-[13px] text-[#8e95a5] leading-relaxed max-w-sm">
-              <strong className="text-white font-semibold">Petal Hotel</strong> offers clean, comfortable accommodation in <strong className="text-white">Shamshabad</strong>, located just 10 minutes from Rajiv Gandhi International Airport. Whether you are traveling for business, a flight transit, or a family vacation, our 24/7 front desk team is always here to help you rest and feel at home.
+              <strong className="text-white font-semibold">The Pearl Hotel Hyderabad</strong> offers a comfortable, elegant, and affordable stay near Hyderabad Airport with 47 well-appointed rooms. Welcoming families, couples, business travellers, tourists, pilgrims, international guests, and groups with 12:00 noon check-in/out, lift, 100% power backup, and 24/7 front desk support.
             </p>
           </div>
 
@@ -97,49 +97,49 @@ export default function FooterSection() {
           {/* Column 3: SERVICES (2.5 cols) */}
           <div className="lg:col-span-3 sm:col-span-1 flex flex-col gap-4">
             <h4 className="font-sans text-xs sm:text-[13px] font-extrabold tracking-widest text-white uppercase">
-              HOTEL SERVICES
+              ROOMS &amp; SERVICES
             </h4>
             <ul className="flex flex-col gap-2.5 text-xs sm:text-[13px]">
               <li>
                 <Link href="#services" className="text-[#b59a6a] hover:text-[#d1b585] transition-colors flex items-center gap-2 group font-semibold">
                   <span className="font-bold group-hover:translate-x-0.5 transition-transform">&gt;</span>
-                  <span>Standard Room (Twin Bed)</span>
+                  <span>Deluxe Room (from ₹2,500)</span>
                 </Link>
               </li>
               <li>
                 <Link href="#services" className="hover:text-white transition-colors flex items-center gap-2 group">
                   <span className="text-[#b59a6a] font-bold group-hover:translate-x-0.5 transition-transform">&gt;</span>
-                  <span>Deluxe Room</span>
+                  <span>Twin Room (from ₹2,500)</span>
                 </Link>
               </li>
               <li>
                 <Link href="#services" className="hover:text-white transition-colors flex items-center gap-2 group">
                   <span className="text-[#b59a6a] font-bold group-hover:translate-x-0.5 transition-transform">&gt;</span>
-                  <span>Executive Deluxe Room</span>
+                  <span>Suite Room (from ₹3,500)</span>
                 </Link>
               </li>
               <li>
                 <Link href="#services" className="hover:text-white transition-colors flex items-center gap-2 group">
                   <span className="text-[#b59a6a] font-bold group-hover:translate-x-0.5 transition-transform">&gt;</span>
-                  <span>Fine Dining Restaurant</span>
+                  <span>In-House Restaurant &amp; Room Service</span>
                 </Link>
               </li>
               <li>
                 <Link href="#services" className="hover:text-white transition-colors flex items-center gap-2 group">
                   <span className="text-[#b59a6a] font-bold group-hover:translate-x-0.5 transition-transform">&gt;</span>
-                  <span>Infinity Swimming Pool</span>
+                  <span>24-Hour Front Desk &amp; Power Backup</span>
                 </Link>
               </li>
               <li>
                 <Link href="#services" className="hover:text-white transition-colors flex items-center gap-2 group">
                   <span className="text-[#b59a6a] font-bold group-hover:translate-x-0.5 transition-transform">&gt;</span>
-                  <span>Spa &amp; Wellness Centre</span>
+                  <span>Lift &amp; Free On-Site Parking</span>
                 </Link>
               </li>
               <li>
                 <Link href="#services" className="hover:text-white transition-colors flex items-center gap-2 group">
                   <span className="text-[#b59a6a] font-bold group-hover:translate-x-0.5 transition-transform">&gt;</span>
-                  <span>24/7 Airport Transfer</span>
+                  <span>24/7 Airport Transfer Assistance</span>
                 </Link>
               </li>
             </ul>
@@ -155,16 +155,16 @@ export default function FooterSection() {
               {/* Phone */}
               <div className="flex items-start gap-3">
                 <Phone size={16} className="text-[#b59a6a] shrink-0 mt-0.5" />
-                <a href="tel:+919100048478" className="text-white font-medium hover:text-[#b59a6a] transition-colors tracking-wide">
-                  +91 91000 48478
+                <a href="tel:+918106665517" className="text-white font-medium hover:text-[#b59a6a] transition-colors tracking-wide">
+                  +91 81066 65517
                 </a>
               </div>
 
               {/* Email */}
               <div className="flex items-start gap-3">
                 <Mail size={16} className="text-[#b59a6a] shrink-0 mt-0.5" />
-                <a href="mailto:concierge@petalhotel.com" className="hover:text-white transition-colors break-all">
-                  concierge@petalhotel.com
+                <a href="mailto:info@pearlhotelhyderabad.com" className="hover:text-white transition-colors break-all">
+                  info@pearlhotelhyderabad.com
                 </a>
               </div>
 
@@ -173,26 +173,26 @@ export default function FooterSection() {
                 <MapPin size={16} className="text-[#b59a6a] shrink-0 mt-0.5" />
                 <div>
                   <p className="text-[#8e95a5] leading-relaxed">
-                    Airport Road, Shamshabad, Hyderabad, Telangana 501218
+                    PL NO 75/EP, Sai Pramukh Enclave, Devatha Bowli, ThonduPally, Shamshabad, Hyderabad, Telangana 501218
                   </p>
                   <a
-                    href="https://maps.google.com"
+                    href="https://maps.google.com/?q=PL+NO+75/EP,+Sai+Pramukh+Enclave,+Devatha+Bowli,+ThonduPally,+Shamshabad,+Hyderabad,+Telangana+501218"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-[#b59a6a] hover:underline font-semibold inline-block mt-1"
                   >
-                    View locations on Google Maps
+                    View location on Google Maps &rarr;
                   </a>
                 </div>
               </div>
 
-              {/* Hours */}
+              {/* Hours & Check-in */}
               <div className="flex items-start gap-3">
                 <Clock size={16} className="text-[#b59a6a] shrink-0 mt-0.5" />
                 <div>
-                  <p className="text-white font-semibold">Mon – Sun: 24/7 Operations</p>
+                  <p className="text-white font-semibold">Check-in &amp; Check-out: 12:00 Noon</p>
                   <p className="text-[#8e95a5] text-[11px] mt-0.5">
-                    24/7 Front Desk &amp; Airport Transfers
+                    24-Hour Front Desk &amp; Room Assistance
                   </p>
                 </div>
               </div>
@@ -201,10 +201,21 @@ export default function FooterSection() {
 
         </div>
 
+        {/* Accepted Payment Methods Note */}
+        <div className="py-4 border-b border-white/10 flex flex-wrap items-center justify-between gap-3 text-xs text-[#8e95a5]">
+          <div className="flex items-center gap-2">
+            <span className="text-white font-medium">Accepted Payments:</span>
+            <span>Cash &bull; UPI (GPay / PhonePe / Paytm) &bull; Debit / Credit Cards &bull; Net Banking</span>
+          </div>
+          <div className="text-[11px] text-[#b59a6a]">
+            Domain: pearlhotelhyderabad.com
+          </div>
+        </div>
+
         {/* Bottom Sub-footer */}
         <div className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-[#8e95a5]">
           <p className="text-center sm:text-left">
-            &copy; 2026 Petal Hotel. All rights reserved.
+            &copy; 2026 The Pearl Hotel Hyderabad. All rights reserved.
           </p>
 
           <p className="text-center sm:text-right">
@@ -217,7 +228,7 @@ export default function FooterSection() {
 
       {/* Floating Sticky WhatsApp Pill Button in Bottom Right */}
       <a
-        href="https://wa.me/919100048478"
+        href="https://wa.me/918106665517"
         target="_blank"
         rel="noopener noreferrer"
         className="fixed bottom-6 right-6 z-50 px-4 py-2.5 rounded-full bg-[#00a884] hover:bg-[#008f6f] text-white text-xs font-semibold tracking-wide shadow-2xl flex items-center gap-2 transition-all hover:scale-105 active:scale-95 cursor-pointer"

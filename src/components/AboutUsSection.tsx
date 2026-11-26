@@ -43,15 +43,15 @@ export default function AboutUsSection() {
 
             {/* Hotel name heading - font-serif font-semibold (weight 600) */}
             <h2 className="font-serif font-semibold text-[28px] sm:text-[36px] lg:text-[44px] leading-tight text-[#183b32] tracking-tight mb-5">
-              Petal Hotel
+              The Pearl Hotel Hyderabad
             </h2>
 
             {/* Description */}
             <p className="text-sm sm:text-[15px] text-[#525d58] leading-relaxed mb-4">
-              Located in <strong className="text-[#b59a6a] font-semibold">Shamshabad</strong>, just a 10-minute drive from Rajiv Gandhi International Airport, <strong className="text-[#183b32] font-semibold">Petal Hotel</strong> was created to give travelers a quiet, dependable, and comfortable place to rest. We understand how tiring flights and road travel can be, which is why we focus on what truly matters: quiet air-conditioned rooms, clean beds with fresh linens, spotless bathrooms, and attentive staff.
+              Conveniently situated at <strong className="text-[#183b32] font-semibold">Sai Pramukh Enclave, Shamshabad</strong>, just minutes from Rajiv Gandhi International Airport (RGIA), <strong className="text-[#b59a6a] font-semibold">The Pearl Hotel Hyderabad</strong> offers a comfortable, elegant, and affordable stay with 47 well-appointed rooms.
             </p>
             <p className="text-sm sm:text-[15px] text-[#525d58] leading-relaxed mb-8">
-              Whether you have an early morning flight, a long transit layover, or business meetings around the airport and Hyderabad, our team is at your service 24 hours a day with hot meals, easy check-in, and reliable airport pick-up and drop-off.
+              We warmly welcome families, couples, business travellers, tourists, pilgrims, international guests, and groups. With 12:00 noon check-in and check-out, elevator access, 100% power backup, on-site dining, and 24-hour front desk assistance, we ensure your stay near Hyderabad Airport is seamless and pleasant.
             </p>
 
             {/* Read More Button */}
