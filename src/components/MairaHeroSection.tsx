@@ -23,11 +23,11 @@ export default function MairaHeroSection() {
 
   return (
     <div className="w-full bg-[#f9f6f0] text-[#183b32] relative overflow-x-hidden">
-      
+
       {/* Top Navigation Bar */}
       <header className="w-full bg-[#f9f6f0] border-b border-[#eae6df] sticky top-0 z-50">
         <div className="w-full px-5 sm:px-8 lg:px-14 xl:px-20 2xl:px-28 py-3 sm:py-3.5 flex items-center justify-between">
-          
+
           {/* Left Brand Logo: Arched French Window + Petal Hotel */}
           <Link href="/" className="flex items-center gap-2 sm:gap-2.5 group">
             <svg
@@ -114,7 +114,7 @@ export default function MairaHeroSection() {
 
       {/* Main Hero Container - Full screen on mobile (100dvh) */}
       <section className="relative w-full min-h-[calc(100dvh-57px)] lg:min-h-[640px] flex flex-col justify-between lg:flex-row lg:items-stretch overflow-hidden">
-        
+
         {/* Full-bleed Right Bedroom Photo (Desktop Background) */}
         <div className="hidden lg:block absolute inset-0 z-0">
           <Image
@@ -144,9 +144,9 @@ export default function MairaHeroSection() {
 
         {/* Hero Content Container - Natural left alignment without giant awkward gap */}
         <div className="relative z-20 w-full lg:w-[50%] xl:w-[48%] px-5 sm:px-8 lg:pl-14 lg:pr-8 xl:pl-20 xl:pr-10 2xl:pl-28 py-3.5 sm:py-12 lg:py-16 flex flex-col justify-center order-1">
-          
+
           <div className="max-w-[490px] flex flex-col items-start my-auto">
-            
+
             {/* Eyebrow Label with Shamshabad Highlight */}
             <div className="flex items-center gap-1.5 sm:gap-2 mb-2 sm:mb-5">
               <span className="w-1.5 h-1.5 rounded-full bg-[#a0856c] inline-block shrink-0" />
@@ -156,9 +156,9 @@ export default function MairaHeroSection() {
               </span>
             </div>
 
-            {/* Main Headline highlighting SHAMSHABAD - font-serif font-semibold (weight 600) */}
+            {/* Main Headline - Simple, clean, and elegant with Shamshabad highlight */}
             <h1 className="section-title font-serif font-semibold text-[28px] sm:text-[36px] lg:text-[44px] leading-tight text-[#183b32] tracking-tight mb-2 sm:mb-3">
-              Comfort &amp; hospitality at<br />
+              Welcome to<br />
               The Pearl Hotel in<br />
               <span className="text-[#b59a6a]">Shamshabad</span>
             </h1>
@@ -172,7 +172,7 @@ export default function MairaHeroSection() {
                 47 well-appointed rooms in <strong className="text-[#b59a6a] font-semibold">Shamshabad</strong>, minutes from RGIA Airport with AC, TV, balcony, lift, power backup &amp; 24-hr front desk.
               </span>
               <span className="hidden sm:inline">
-                Welcome to <strong className="text-[#183b32] font-semibold">The Pearl Hotel Hyderabad</strong>, offering 47 comfortable rooms in <strong className="text-[#b59a6a] font-semibold">Shamshabad</strong> near Rajiv Gandhi International Airport. Welcoming families, couples, business travellers, tourists, pilgrims, and groups.
+                A comfortable and affordable stay in <strong className="text-[#b59a6a] font-semibold">Shamshabad</strong> near Rajiv Gandhi International Airport. Featuring 47 well-appointed rooms, welcoming families, couples, business travellers, tourists, pilgrims, and groups.
               </span>
             </p>
 
