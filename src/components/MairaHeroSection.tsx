@@ -118,7 +118,7 @@ export default function MairaHeroSection() {
         {/* Full-bleed Right Bedroom Photo (Desktop Background) */}
         <div className="hidden lg:block absolute inset-0 z-0">
           <Image
-            src="/images/petal_hotel_hero.jpg"
+            src="/images/hero_bedroom_restored.jpg"
             alt="The Pearl Hotel Bedroom in Shamshabad"
             fill
             priority
@@ -206,7 +206,7 @@ export default function MairaHeroSection() {
           {/* Main Photo Card - Expanded to cover available space */}
           <div className="relative w-full aspect-[4/3] sm:aspect-[16/10] max-h-[360px] rounded-2xl sm:rounded-3xl overflow-hidden shadow-md border border-[#eae5dd]">
             <Image
-              src="/images/petal_hotel_hero.jpg"
+              src="/images/hero_bedroom_restored.jpg"
               alt="The Pearl Hotel Bedroom in Shamshabad"
               fill
               priority
