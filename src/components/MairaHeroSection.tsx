@@ -151,15 +151,15 @@ export default function MairaHeroSection() {
             <div className="flex items-center gap-1.5 sm:gap-2 mb-2 sm:mb-5">
               <span className="w-1.5 h-1.5 rounded-full bg-[#a0856c] inline-block shrink-0" />
               <span className="text-[9.5px] sm:text-[11px] font-bold tracking-[0.14em] sm:tracking-[0.2em] text-[#a0856c] uppercase">
-                <span className="sm:hidden">LUXURY PREMIUM HOTEL &middot; SHAMSHABAD</span>
-                <span className="hidden sm:inline">LUXURY PREMIUM HOTEL - SHAMSHABAD, HYDERABAD</span>
+                <span className="sm:hidden">THE PEARL HOTEL &middot; SHAMSHABAD</span>
+                <span className="hidden sm:inline">THE PEARL HOTEL HYDERABAD - 47 ROOMS IN SHAMSHABAD</span>
               </span>
             </div>
 
             {/* Main Headline highlighting SHAMSHABAD - font-serif font-semibold (weight 600) */}
-            <h1 className="font-serif font-semibold text-[28px] sm:text-[36px] lg:text-[44px] leading-tight text-[#183b32] tracking-tight mb-2 sm:mb-3">
-              Luxury premium<br />
-              hotel in<br />
+            <h1 className="section-title font-serif font-semibold text-[28px] sm:text-[36px] lg:text-[44px] leading-tight text-[#183b32] tracking-tight mb-2 sm:mb-3">
+              Comfort, elegance &amp;<br />
+              hospitality in<br />
               <span className="text-[#b59a6a]">Shamshabad</span>
             </h1>
 
