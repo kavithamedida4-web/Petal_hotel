@@ -42,7 +42,7 @@ export default function AboutUsSection() {
             </span>
 
             {/* Hotel name heading - font-serif font-semibold (weight 600) */}
-            <h2 className="section-title text-[#183b32] mb-5" style={{ fontWeight: 600 }}>
+            <h2 className="section-title text-[#183b32] mb-5" style={{ fontWeight: 500 }}>
               The Pearl Hotel Hyderabad
             </h2>
 

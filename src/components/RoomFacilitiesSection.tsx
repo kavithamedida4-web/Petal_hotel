@@ -114,8 +114,8 @@ export default function RoomFacilitiesSection() {
 
       {/* Section Heading */}
       <div className="max-w-3xl mx-auto px-4 mb-8 sm:mb-12 text-center">
-        <h2 className="section-title text-[#183b32]" style={{ fontWeight: 600 }}>
-          Facilities at <span className="text-[#b59a6a]" style={{ fontWeight: 600 }}>The Pearl Hotel</span>
+        <h2 className="section-title text-[#183b32]" style={{ fontWeight: 500 }}>
+          Facilities at <span className="text-[#b59a6a]" style={{ fontWeight: 500 }}>The Pearl Hotel</span>
         </h2>
         <p className="text-xs sm:text-sm text-[#5a6560] mt-2 max-w-lg mx-auto leading-relaxed">
           47 well-appointed rooms with Free Wi-Fi, AC, Parking, In-house Restaurant, 24-hr Front Desk, Power Backup, Lift &amp; CCTV Security in Shamshabad.

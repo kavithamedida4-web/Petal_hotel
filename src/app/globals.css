@@ -40,13 +40,13 @@
   border-bottom-right-radius: 6px;
 }
 
-/* Unified section headings: exact same font, size, and 600 weight across entire site */
+/* Unified section headings: exact same font, size, and 500 weight across entire site */
 .section-title,
 .section-title span,
 .section-title strong,
 .section-title * {
   font-family: var(--font-serif) !important;
-  font-weight: 600 !important;
+  font-weight: 500 !important;
 }
 
 .section-title {

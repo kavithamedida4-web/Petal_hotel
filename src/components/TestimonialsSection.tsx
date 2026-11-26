@@ -50,8 +50,8 @@ export default function TestimonialsSection() {
         {/* Section Header */}
         <div className="text-center max-w-2xl mx-auto mb-10 sm:mb-14">
           {/* Main Title with Dual Tone - font-serif font-semibold (weight 600) */}
-          <h2 className="section-title text-[#183b32] mb-3.5" style={{ fontWeight: 600 }}>
-            What Our Customers <span className="text-[#b59a6a]" style={{ fontWeight: 600 }}>Say</span>
+          <h2 className="section-title text-[#183b32] mb-3.5" style={{ fontWeight: 500 }}>
+            What Our Customers <span className="text-[#b59a6a]" style={{ fontWeight: 500 }}>Say</span>
           </h2>
 
           {/* Subtitle Description */}

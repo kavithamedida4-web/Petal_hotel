@@ -118,8 +118,8 @@ export default function GallerySection() {
 
         {/* Compact Section Header */}
         <div className="max-w-2xl mx-auto mb-5 sm:mb-8 text-center">
-          <h2 className="section-title text-white mb-1.5" style={{ fontWeight: 600 }}>
-            Our Curated <span className="text-[#b59a6a]" style={{ fontWeight: 600 }}>Photo Gallery</span>
+          <h2 className="section-title text-white mb-1.5" style={{ fontWeight: 500 }}>
+            Our Curated <span className="text-[#b59a6a]" style={{ fontWeight: 500 }}>Photo Gallery</span>
           </h2>
 
           <p className="text-xs text-[#9da3af] leading-relaxed max-w-md mx-auto">
