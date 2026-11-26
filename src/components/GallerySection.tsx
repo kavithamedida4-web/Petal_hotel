@@ -2,7 +2,7 @@
 
 import React, { useState } from "react";
 import Image from "next/image";
-import { ZoomIn, X, Sparkles } from "lucide-react";
+import { ZoomIn, X } from "lucide-react";
 
 type Category = "All" | "Suites" | "Amenities" | "Dining";
 
@@ -21,21 +21,21 @@ const galleryItems: GalleryItem[] = [
   // Row 1 (Featured Duo: 8 cols + 4 cols)
   {
     id: 1,
-    title: "Presidential Emerald King Suite",
-    category: "Suites",
-    album: "Luxury Suites",
-    tag: "Signature Suite",
-    src: "/images/petal_luxury_suite.jpg",
+    title: "The Pearl Hotel Illuminated Night Facade",
+    category: "Amenities",
+    album: "Hotel Architecture",
+    tag: "Exterior Facade",
+    src: "/images/pearl_exterior_night_wide.jpg",
     colSpan: "col-span-12 md:col-span-8",
     aspect: "h-[180px] sm:h-[220px] lg:h-[250px]",
   },
   {
     id: 2,
-    title: "Rooftop Sunset Horizon Pool",
-    category: "Amenities",
-    album: "Pool & Wellness",
-    tag: "Panoramic View",
-    src: "/images/hotel_gallery_pool.jpg",
+    title: "Deluxe King Room with AC & Balcony",
+    category: "Suites",
+    album: "Guest Rooms",
+    tag: "King Bed",
+    src: "/images/pearl_deluxe_room_1.jpg",
     colSpan: "col-span-12 md:col-span-4",
     aspect: "h-[180px] sm:h-[220px] lg:h-[250px]",
   },
@@ -43,31 +43,31 @@ const galleryItems: GalleryItem[] = [
   // Row 2 (Trio: 4 cols each)
   {
     id: 3,
-    title: "Michelin Fine Dining Restaurant",
+    title: "In-House Restaurant & Banquet Hall",
     category: "Dining",
-    album: "Dining",
-    tag: "Gourmet Cuisine",
-    src: "/images/hotel_gallery_dining.jpg",
+    album: "Dining & Cuisine",
+    tag: "Multi-Cuisine",
+    src: "/images/pearl_restaurant.jpg",
     colSpan: "col-span-12 sm:col-span-4",
     aspect: "h-[130px] sm:h-[155px]",
   },
   {
     id: 4,
-    title: "Grand Travertine Chandelier Lobby",
-    category: "Dining",
-    album: "Architecture",
+    title: "Reception Lobby & Elevator Access",
+    category: "Amenities",
+    album: "Lobby & Lift",
     tag: "24/7 Front Desk",
-    src: "/images/hotel_gallery_lobby.jpg",
+    src: "/images/pearl_lobby_elevator.jpg",
     colSpan: "col-span-12 sm:col-span-4",
     aspect: "h-[130px] sm:h-[155px]",
   },
   {
     id: 5,
-    title: "Contemporary Minimalist Suite",
+    title: "Twin Room with 2 Single Beds",
     category: "Suites",
-    album: "Luxury Suites",
-    tag: "Shamshabad Stay",
-    src: "/images/petal_hotel_hero.jpg",
+    album: "Guest Rooms",
+    tag: "Twin Beds",
+    src: "/images/pearl_twin_room.jpg",
     colSpan: "col-span-12 sm:col-span-4",
     aspect: "h-[130px] sm:h-[155px]",
   },
@@ -75,21 +75,21 @@ const galleryItems: GalleryItem[] = [
   // Row 3 (Balanced Duo: 6 cols each)
   {
     id: 6,
-    title: "Calacatta Marble Spa & Soaking Tub",
+    title: "Spotless Marble Guest Corridor",
     category: "Amenities",
-    album: "Wellness Spa",
-    tag: "Ayurvedic Spa",
-    src: "/images/hotel_gallery_spa.jpg",
+    album: "Floor & Rooms",
+    tag: "CCTV Monitored",
+    src: "/images/pearl_corridor.jpg",
     colSpan: "col-span-12 sm:col-span-6",
     aspect: "h-[150px] sm:h-[180px]",
   },
   {
     id: 7,
-    title: "Heritage Royal Palace Master Suite",
+    title: "Suite Room with Living & Seating Space",
     category: "Suites",
-    album: "Heritage Living",
-    tag: "Royal Indian Decor",
-    src: "/images/indian_hotel_hero.jpg",
+    album: "Luxury Living",
+    tag: "Suite Room",
+    src: "/images/pearl_suite_room.jpg",
     colSpan: "col-span-12 sm:col-span-6",
     aspect: "h-[150px] sm:h-[180px]",
   },
@@ -97,21 +97,28 @@ const galleryItems: GalleryItem[] = [
 
 // Clean 6 square images for mobile 3-column Instagram-style grid (compact 2 rows)
 const mobileImages = [
-  { id: 1, src: "/images/petal_luxury_suite.jpg", title: "Presidential Emerald King Suite" },
-  { id: 2, src: "/images/indian_hotel_hero.jpg", title: "Heritage Royal Palace Suite" },
-  { id: 3, src: "/images/hotel_gallery_pool.jpg", title: "Rooftop Sunset Horizon Pool" },
-  { id: 4, src: "/images/hotel_gallery_dining.jpg", title: "Michelin Fine Dining" },
-  { id: 5, src: "/images/petal_hotel_hero.jpg", title: "Contemporary Minimalist Suite" },
-  { id: 6, src: "/images/hotel_gallery_lobby.jpg", title: "Grand Travertine Lobby" },
+  { id: 1, src: "/images/pearl_exterior_night_wide.jpg", title: "The Pearl Hotel Hyderabad" },
+  { id: 2, src: "/images/pearl_deluxe_room_1.jpg", title: "Deluxe King Room" },
+  { id: 3, src: "/images/pearl_restaurant.jpg", title: "In-House Restaurant" },
+  { id: 4, src: "/images/pearl_twin_room.jpg", title: "Twin Room" },
+  { id: 5, src: "/images/pearl_lobby_elevator.jpg", title: "Elevator Lobby" },
+  { id: 6, src: "/images/pearl_corridor.jpg", title: "Hotel Corridor" },
 ];
 
+const categories: Category[] = ["All", "Suites", "Dining", "Amenities"];
+
 export default function GallerySection() {
-  const [selectedImg, setSelectedImg] = useState<{ src: string; title: string; album?: string; tag?: string } | null>(null);
+  const [activeCategory, setActiveCategory] = useState<Category>("All");
+  const [lightboxImg, setLightboxImg] = useState<{ src: string; title: string } | null>(null);
+
+  const filteredItems =
+    activeCategory === "All"
+      ? galleryItems
+      : galleryItems.filter((item) => item.category === activeCategory);
 
   return (
-    <section id="gallery" className="w-full bg-[#111215] text-white py-10 sm:py-14 overflow-x-hidden relative">
-
-      {/* Decorative ambient lighting glow */}
+    <section id="gallery" className="w-full bg-[#17181c] text-white py-10 sm:py-14 relative overflow-hidden">
+      {/* Subtle warm ambient background glow */}
       <div className="absolute top-1/4 left-1/2 -translate-x-1/2 w-[500px] h-[250px] bg-[#b59a6a]/10 rounded-full blur-[120px] pointer-events-none" />
 
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
@@ -128,95 +135,146 @@ export default function GallerySection() {
         </div>
 
         {/* ============================================================
-            MOBILE VIEW: EXACT 3-COLUMN SQUARE INSTAGRAM GRID (UNCHANGED)
+            MOBILE VIEW: EXACT 3-COLUMN SQUARE INSTAGRAM GRID
            ============================================================ */}
         <div className="md:hidden w-full max-w-sm mx-auto px-1">
           <div className="grid grid-cols-3 gap-1 sm:gap-1.5">
             {mobileImages.map((img) => (
               <div
                 key={img.id}
-                onClick={() => setSelectedImg({ src: img.src, title: img.title, album: "Gallery", tag: "The Pearl Hotel" })}
-                className="relative aspect-square overflow-hidden cursor-pointer bg-[#1c1e24] active:opacity-75 transition-opacity rounded-sm"
+                onClick={() => setLightboxImg(img)}
+                className="relative aspect-square w-full rounded-md overflow-hidden bg-[#24262d] cursor-pointer group shadow-xs border border-white/5 active:scale-95 transition-transform"
               >
                 <Image
                   src={img.src}
                   alt={img.title}
                   fill
-                  className="object-cover"
+                  className="object-cover object-center group-hover:scale-105 transition-transform duration-300"
                   sizes="33vw"
                 />
+                <div className="absolute inset-0 bg-black/0 group-hover:bg-black/30 transition-colors flex items-center justify-center">
+                  <ZoomIn size={14} className="text-white opacity-0 group-hover:opacity-100 transition-opacity drop-shadow-md" />
+                </div>
               </div>
             ))}
+          </div>
+
+          <div className="mt-3 text-center">
+            <span className="text-[10.5px] text-[#8e95a5] font-medium tracking-wide">
+              Tap any photo to view full size
+            </span>
           </div>
         </div>
 
         {/* ============================================================
-            DESKTOP VIEW: COMPACT BENTO MAGAZINE GRID
+            TABLET & DESKTOP VIEW: SOPHISTICATED BENTO EDITORIAL GRID
            ============================================================ */}
-        <div className="hidden md:grid grid-cols-12 gap-2.5 sm:gap-3.5">
-          {galleryItems.map((item) => (
-            <div
-              key={item.id}
-              onClick={() => setSelectedImg(item)}
-              className={`${item.colSpan} group relative rounded-xl overflow-hidden cursor-pointer bg-[#1c1e24] border border-white/10 hover:border-[#b59a6a]/50 transition-all duration-300 shadow-md hover:shadow-xl hover:shadow-[#b59a6a]/10`}
-            >
-              <div className={`relative w-full ${item.aspect} overflow-hidden`}>
-                <Image
-                  src={item.src}
-                  alt={item.title}
-                  fill
-                  className="object-cover group-hover:scale-106 transition-transform duration-500 ease-out"
-                  sizes="(max-width: 1024px) 50vw, 380px"
-                />
+        <div className="hidden md:block">
 
-                {/* Subtle Hover Darkening with Zoom Icon */}
-                <div className="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                  <span className="w-9 h-9 rounded-full bg-white/20 backdrop-blur-md text-white flex items-center justify-center shadow-md border border-white/30">
-                    <ZoomIn size={16} strokeWidth={2.2} />
-                  </span>
+          {/* Minimal Filter Tabs */}
+          <div className="flex items-center justify-center gap-1 sm:gap-1.5 mb-6">
+            {categories.map((cat) => {
+              const active = activeCategory === cat;
+              return (
+                <button
+                  key={cat}
+                  onClick={() => setActiveCategory(cat)}
+                  className={`px-3.5 py-1 rounded-full text-xs font-medium tracking-wide transition-all cursor-pointer ${
+                    active
+                      ? "bg-[#b59a6a] text-white shadow-xs"
+                      : "bg-[#212329] text-[#9ca3af] hover:text-white hover:bg-[#2b2d35]"
+                  }`}
+                >
+                  {cat}
+                </button>
+              );
+            })}
+          </div>
+
+          {/* Bento Grid */}
+          <div className="grid grid-cols-12 gap-2.5 sm:gap-3">
+            {filteredItems.map((item) => (
+              <div
+                key={item.id}
+                onClick={() => setLightboxImg({ src: item.src, title: item.title })}
+                className={`${item.colSpan} relative rounded-xl overflow-hidden bg-[#202228] cursor-pointer group border border-white/5 shadow-sm hover:shadow-md transition-all duration-300`}
+              >
+                <div className={`relative w-full ${item.aspect} overflow-hidden`}>
+                  <Image
+                    src={item.src}
+                    alt={item.title}
+                    fill
+                    className="object-cover object-center group-hover:scale-104 transition-transform duration-500 ease-out"
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                  />
+
+                  {/* Gradient Overlay */}
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/25 to-transparent opacity-65 group-hover:opacity-80 transition-opacity duration-300" />
+
+                  {/* Top-Right Badge Tag */}
+                  <div className="absolute top-2 right-2 z-10">
+                    <span className="px-2 py-0.5 rounded-full bg-black/60 backdrop-blur-md border border-white/10 text-[9.5px] font-medium tracking-wider text-[#d4af37] uppercase">
+                      {item.tag}
+                    </span>
+                  </div>
+
+                  {/* Bottom Captions */}
+                  <div className="absolute bottom-0 left-0 right-0 p-2.5 sm:p-3 z-10 flex items-end justify-between gap-2">
+                    <div className="min-w-0">
+                      <p className="text-[10px] text-[#b59a6a] font-medium uppercase tracking-wider mb-0.5">
+                        {item.album}
+                      </p>
+                      <h4 className="font-sans text-xs sm:text-sm font-semibold text-white tracking-tight leading-snug line-clamp-1 group-hover:text-[#f3eee5] transition-colors">
+                        {item.title}
+                      </h4>
+                    </div>
+
+                    <div className="w-6 h-6 rounded-full bg-white/15 backdrop-blur-md flex items-center justify-center text-white shrink-0 group-hover:bg-[#b59a6a] group-hover:scale-110 transition-all">
+                      <ZoomIn size={11} />
+                    </div>
+                  </div>
                 </div>
-
-                {/* Golden Accent Corner Border on Hover */}
-                <div className="absolute inset-0 pointer-events-none border border-[#b59a6a]/0 group-hover:border-[#b59a6a]/40 rounded-xl transition-all duration-300" />
               </div>
-            </div>
-          ))}
+            ))}
+          </div>
+
         </div>
 
       </div>
 
-      {/* Fullscreen High-Resolution Lightbox Modal - Pure Image Only, No Text */}
-      {selectedImg && (
+      {/* Lightbox Modal */}
+      {lightboxImg && (
         <div
-          onClick={() => setSelectedImg(null)}
-          className="fixed inset-0 z-50 bg-black/90 backdrop-blur-md flex items-center justify-center p-4 sm:p-6 animate-fadeIn"
+          className="fixed inset-0 z-50 bg-black/95 backdrop-blur-md flex items-center justify-center p-4 animate-fadeIn"
+          onClick={() => setLightboxImg(null)}
         >
           <button
-            onClick={() => setSelectedImg(null)}
-            className="absolute top-5 right-5 sm:top-7 sm:right-7 w-10 h-10 rounded-full bg-white/10 hover:bg-white/20 text-white flex items-center justify-center transition-all cursor-pointer z-50 border border-white/15 shadow-xl"
-            aria-label="Close image"
+            onClick={() => setLightboxImg(null)}
+            className="absolute top-4 right-4 sm:top-6 sm:right-6 w-9 h-9 rounded-full bg-white/10 hover:bg-white/20 text-white flex items-center justify-center transition-colors cursor-pointer z-50"
+            aria-label="Close modal"
           >
-            <X size={20} />
+            <X size={18} />
           </button>
 
           <div
+            className="relative max-w-4xl max-h-[85vh] w-full h-[65vh] sm:h-[75vh] flex flex-col items-center justify-center"
             onClick={(e) => e.stopPropagation()}
-            className="relative max-w-4xl w-full max-h-[88vh] rounded-2xl overflow-hidden shadow-2xl flex items-center justify-center"
           >
-            <div className="relative w-full h-[65vh] sm:h-[80vh]">
+            <div className="relative w-full h-full rounded-xl overflow-hidden border border-white/10 shadow-2xl">
               <Image
-                src={selectedImg.src}
-                alt="The Pearl Hotel Hyderabad Gallery"
+                src={lightboxImg.src}
+                alt={lightboxImg.title}
                 fill
                 className="object-contain"
-                sizes="95vw"
-                priority
+                sizes="(max-width: 1200px) 100vw, 1200px"
               />
             </div>
+            <p className="text-white text-xs sm:text-sm font-medium mt-3 text-center px-4">
+              {lightboxImg.title}
+            </p>
           </div>
         </div>
       )}
-
     </section>
   );
 }

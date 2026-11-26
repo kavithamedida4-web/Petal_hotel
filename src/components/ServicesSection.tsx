@@ -8,40 +8,37 @@ const services = [
   {
     title: "Deluxe Room",
     subtitle: "1 king bed, up to 3 adults. Includes AC, TV, balcony, and attached bathroom.",
-    price: "From ₹2,500 / night",
-    img: "/images/petal_card_deluxe.jpg",
+    img: "/images/pearl_deluxe_room_1.jpg",
   },
   {
     title: "Twin Room",
     subtitle: "2 single beds, up to 2 adults. Includes AC, TV, balcony, and attached bathroom.",
-    price: "From ₹2,500 / night",
-    img: "/images/petal_room_twin.jpg",
+    img: "/images/pearl_twin_room.jpg",
   },
   {
     title: "Suite Room",
     subtitle: "1 king bed and living area, up to 3 adults. Includes AC, TV, balcony, and attached bathroom.",
-    price: "From ₹3,500 / night",
-    img: "/images/petal_room_executive.jpg",
+    img: "/images/pearl_suite_room.jpg",
   },
   {
     title: "In-House Restaurant & Room Service",
     subtitle: "Freshly prepared South & North Indian dishes, daily breakfast, and 24-hr in-room dining.",
-    img: "/images/petal_card_dining.jpg",
+    img: "/images/pearl_restaurant.jpg",
   },
   {
     title: "24-Hour Front Desk & Power Backup",
     subtitle: "12:00 noon check-in/out, 100% generator power backup, and round-the-clock reception.",
-    img: "/images/petal_service_spa.jpg",
+    img: "/images/pearl_lobby_elevator.jpg",
   },
   {
     title: "Lift & Free On-Site Parking",
     subtitle: "Smooth elevator access across all 47 rooms, plus secure vehicle parking with CCTV monitoring.",
-    img: "/images/petal_service_pool.jpg",
+    img: "/images/pearl_exterior_night.jpg",
   },
   {
-    title: "24/7 Airport Transfer Assistance",
-    subtitle: "Quick, dependable pick-up and drop-off to Rajiv Gandhi International Airport (RGIA) in Shamshabad.",
-    img: "/images/petal_airport_transfer_chauffeur.jpg",
+    title: "Spotless Corridors & CCTV Security",
+    subtitle: "Bright marble corridors with 24/7 CCTV surveillance across all floors in Shamshabad.",
+    img: "/images/pearl_corridor.jpg",
   },
 ];
 

@@ -14,8 +14,8 @@ export default function AboutUsSection() {
             {/* Main large back image with rounded soft corner */}
             <div className="relative w-[78%] h-[340px] sm:h-[390px] rounded-2xl overflow-hidden shadow-xl border border-white/40">
               <Image
-                src="/images/petal_hotel_about_1.jpg"
-                alt="Petal Hotel Executive Suite"
+                src="/images/pearl_exterior_night.jpg"
+                alt="The Pearl Hotel Hyderabad Exterior Building"
                 fill
                 className="object-cover"
                 sizes="(max-width: 768px) 80vw, 40vw"
@@ -25,8 +25,8 @@ export default function AboutUsSection() {
             {/* Overlapping front smaller image shifted down-right with white frame */}
             <div className="absolute right-0 bottom-4 sm:bottom-6 w-[55%] h-[200px] sm:h-[230px] rounded-2xl overflow-hidden shadow-2xl border-4 border-white">
               <Image
-                src="/images/petal_hotel_about_2.jpg"
-                alt="Petal Hotel Deluxe Bedroom"
+                src="/images/pearl_restaurant.jpg"
+                alt="The Pearl Hotel In-House Restaurant"
                 fill
                 className="object-cover"
                 sizes="(max-width: 768px) 50vw, 25vw"

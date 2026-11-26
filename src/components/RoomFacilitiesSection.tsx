@@ -128,8 +128,8 @@ export default function RoomFacilitiesSection() {
         {/* Full Background Bedroom Photo */}
         <div className="absolute inset-0 z-0">
           <Image
-            src="/images/petal_hotel_facilities_banner.jpg"
-            alt="Petal Hotel Executive Suite"
+            src="/images/pearl_suite_room.jpg"
+            alt="The Pearl Hotel Suite in Shamshabad"
             fill
             priority
             className="object-cover object-center"
