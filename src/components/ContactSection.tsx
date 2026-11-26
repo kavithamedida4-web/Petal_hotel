@@ -13,9 +13,6 @@ import {
   MessageSquare,
   ShieldCheck,
   MapPin,
-  Clock,
-  ExternalLink,
-  Navigation,
 } from "lucide-react";
 
 export default function ContactSection() {
@@ -59,8 +56,6 @@ export default function ContactSection() {
     }
   };
 
-  const googleMapsTravelUrl = "https://www.google.com/travel/hotels/s/uSvWFWegFuYFxwFt8";
-
   return (
     <section id="contact" className="w-full bg-[#f9f6f0] py-12 sm:py-16 lg:py-20 border-t border-[#ede7de] overflow-x-hidden relative scroll-mt-14">
       {/* Decorative ambient color glows */}
@@ -85,7 +80,7 @@ export default function ContactSection() {
           </p>
         </div>
 
-        {/* 2-Column Grid: Exactly Equal 50/50 Width and Equal Height */}
+        {/* 2-Column Grid: Exactly Equal 50/50 Width and Height */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-8 items-stretch">
 
           {/* Left Column: Reservation & Inquiry Form */}
@@ -301,83 +296,16 @@ export default function ContactSection() {
 
           </div>
 
-          {/* Right Column: Hotel Location & Interactive Map (Exact Same Size) */}
-          <div className="bg-white rounded-2xl sm:rounded-3xl p-5 sm:p-7 border border-[#e5decb] shadow-lg shadow-[#183b32]/5 relative overflow-hidden flex flex-col justify-between h-full">
-
-            {/* Top Brand Color Accent Bar */}
-            <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-[#b59a6a] via-[#183b32] to-[#b59a6a]" />
-
-            {/* Header: Exact Same Height Alignment as Form Title */}
-            <div className="border-b border-[#f0eae1] pb-2.5 flex items-baseline justify-between">
-              <div>
-                <h3 className="font-sans text-lg sm:text-xl text-[#183b32] font-bold">
-                  Hotel Location &amp; <span className="text-[#b59a6a]">Map</span>
-                </h3>
-              </div>
-              <span className="px-2.5 py-0.5 rounded-full bg-[#183b32]/10 text-[#183b32] text-[10px] font-bold uppercase tracking-wider">
-                Shamshabad
-              </span>
-            </div>
-
-            {/* Embedded Google Map - Fills Space Perfectly */}
-            <div className="relative w-full flex-1 min-h-[220px] sm:min-h-[240px] my-3.5 rounded-xl sm:rounded-2xl overflow-hidden border border-[#e2dacb] shadow-inner bg-[#fcfaf7]">
-              <iframe
-                title="The Pearl Hotel Hyderabad Location Map"
-                src="https://maps.google.com/maps?q=The+Pearl+Hotel+Hyderabad,+Sai+Pramukh+Enclave,+Devatha+Bowli,+ThonduPally,+Shamshabad,+Hyderabad,+Telangana+501218&t=&z=15&ie=UTF8&iwloc=&output=embed"
-                className="w-full h-full border-0 absolute inset-0"
-                loading="lazy"
-                allowFullScreen
-                referrerPolicy="no-referrer-when-downgrade"
-              />
-            </div>
-
-            {/* Location Info Grid */}
-            <div className="bg-[#fcfaf7] rounded-xl p-3 sm:p-3.5 border border-[#e2dacb] flex flex-col gap-2.5 mb-3.5">
-              {/* Address */}
-              <div className="flex items-start gap-2.5">
-                <div className="w-6 h-6 rounded-md bg-[#f2ecdf] text-[#b59a6a] flex items-center justify-center shrink-0 mt-0.5">
-                  <MapPin size={13} />
-                </div>
-                <div className="flex-1">
-                  <p className="text-[11px] font-bold text-[#183b32] leading-tight">
-                    The Pearl Hotel Hyderabad
-                  </p>
-                  <p className="text-[10.5px] text-[#525d58] leading-snug mt-0.5">
-                    PL NO 75/EP, Sai Pramukh Enclave, Devatha Bowli, ThonduPally, Shamshabad, Hyderabad 501218
-                  </p>
-                </div>
-              </div>
-
-              {/* Timing & Airport */}
-              <div className="grid grid-cols-2 gap-2 pt-2 border-t border-[#ede5d8]">
-                <div className="flex items-center gap-1.5 text-[11px] text-[#183b32]">
-                  <Clock size={12} className="text-[#b59a6a] shrink-0" />
-                  <span className="text-[10.5px] text-[#525d58]">Check-in/out: <strong className="text-[#183b32]">12:00 PM</strong></span>
-                </div>
-                <div className="flex items-center gap-1.5 text-[11px] text-[#183b32]">
-                  <Navigation size={12} className="text-[#b59a6a] shrink-0" />
-                  <span className="text-[10.5px] text-[#525d58]">Airport: <strong className="text-[#183b32]">Near RGIA</strong></span>
-                </div>
-              </div>
-            </div>
-
-            {/* Bottom Action Button & Notice: Exact Same Height Alignment as Left Column */}
-            <div className="flex flex-col gap-2 mt-auto">
-              <a
-                href={googleMapsTravelUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="w-full py-3.5 px-5 rounded-xl bg-gradient-to-r from-[#183b32] via-[#1a443a] to-[#183b32] hover:from-[#122e27] hover:to-[#183b32] text-white text-xs sm:text-[13px] font-semibold tracking-wide transition-all shadow-md shadow-[#183b32]/20 flex items-center justify-center gap-2 group cursor-pointer active:scale-98 border border-[#b59a6a]/30"
-              >
-                <span>View on Google Maps / Travel</span>
-                <ExternalLink size={14} className="text-[#b59a6a] group-hover:translate-x-1 transition-transform" />
-              </a>
-
-              <div className="flex items-center justify-center gap-1.5 text-[10.5px] text-[#78847e] text-center">
-                <span>Direct navigation pin &middot; Minutes from Hyderabad Airport (RGIA)</span>
-              </div>
-            </div>
-
+          {/* Right Column: ONLY MAP, NO TEXT (Exact Same Height & Rounded Style as Left Card) */}
+          <div className="bg-white rounded-2xl sm:rounded-3xl border border-[#e5decb] shadow-lg shadow-[#183b32]/5 overflow-hidden h-[440px] sm:h-[480px] lg:h-full min-h-[380px] relative">
+            <iframe
+              title="The Pearl Hotel Hyderabad Location Map"
+              src="https://maps.google.com/maps?q=The+Pearl+Hotel+Hyderabad,+Sai+Pramukh+Enclave,+Devatha+Bowli,+ThonduPally,+Shamshabad,+Hyderabad,+Telangana+501218&t=&z=15&ie=UTF8&iwloc=&output=embed"
+              className="w-full h-full border-0 absolute inset-0"
+              loading="lazy"
+              allowFullScreen
+              referrerPolicy="no-referrer-when-downgrade"
+            />
           </div>
 
         </div>
