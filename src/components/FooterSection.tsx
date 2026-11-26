@@ -182,7 +182,7 @@ export default function FooterSection() {
                     PL NO 75/EP, Sai Pramukh Enclave, Devatha Bowli, ThonduPally, Shamshabad, Hyderabad, Telangana 501218
                   </p>
                   <a
-                    href="https://maps.google.com/?q=PL+NO+75/EP,+Sai+Pramukh+Enclave,+Devatha+Bowli,+ThonduPally,+Shamshabad,+Hyderabad,+Telangana+501218"
+                    href="https://www.google.com/travel/hotels/s/uSvWFWegFuYFxwFt8"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-[#b59a6a] hover:underline font-semibold inline-block"
