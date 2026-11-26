@@ -208,29 +208,10 @@ export default function GallerySection() {
                     sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                   />
 
-                  {/* Gradient Overlay */}
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/25 to-transparent opacity-65 group-hover:opacity-80 transition-opacity duration-300" />
-
-                  {/* Top-Right Badge Tag */}
-                  <div className="absolute top-2 right-2 z-10">
-                    <span className="px-2 py-0.5 rounded-full bg-black/60 backdrop-blur-md border border-white/10 text-[9.5px] font-medium tracking-wider text-[#d4af37] uppercase">
-                      {item.tag}
-                    </span>
-                  </div>
-
-                  {/* Bottom Captions */}
-                  <div className="absolute bottom-0 left-0 right-0 p-2.5 sm:p-3 z-10 flex items-end justify-between gap-2">
-                    <div className="min-w-0">
-                      <p className="text-[10px] text-[#b59a6a] font-medium uppercase tracking-wider mb-0.5">
-                        {item.album}
-                      </p>
-                      <h4 className="font-sans text-xs sm:text-sm font-semibold text-white tracking-tight leading-snug line-clamp-1 group-hover:text-[#f3eee5] transition-colors">
-                        {item.title}
-                      </h4>
-                    </div>
-
-                    <div className="w-6 h-6 rounded-full bg-white/15 backdrop-blur-md flex items-center justify-center text-white shrink-0 group-hover:bg-[#b59a6a] group-hover:scale-110 transition-all">
-                      <ZoomIn size={11} />
+                  {/* Clean subtle hover overlay with center zoom icon (no text clutter on images) */}
+                  <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-all duration-300 flex items-center justify-center">
+                    <div className="w-9 h-9 rounded-full bg-black/55 backdrop-blur-md border border-white/20 text-white flex items-center justify-center opacity-0 group-hover:opacity-100 group-hover:scale-110 transition-all duration-300 shadow-lg">
+                      <ZoomIn size={16} />
                     </div>
                   </div>
                 </div>
