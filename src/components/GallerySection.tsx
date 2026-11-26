@@ -110,16 +110,16 @@ export default function GallerySection() {
 
   return (
     <section id="gallery" className="w-full bg-[#111215] text-white py-10 sm:py-14 overflow-x-hidden relative">
-      
+
       {/* Decorative ambient lighting glow */}
       <div className="absolute top-1/4 left-1/2 -translate-x-1/2 w-[500px] h-[250px] bg-[#b59a6a]/10 rounded-full blur-[120px] pointer-events-none" />
 
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        
+
         {/* Compact Section Header */}
         <div className="max-w-2xl mx-auto mb-5 sm:mb-8 text-center">
-          <h2 className="section-title text-white mb-1.5">
-            Our Curated <span className="text-[#b59a6a]">Photo Gallery</span>
+          <h2 className="section-title text-white mb-1.5" style={{ fontWeight: 600 }}>
+            Our Curated <span className="text-[#b59a6a]" style={{ fontWeight: 600 }}>Photo Gallery</span>
           </h2>
 
           <p className="text-xs text-[#9da3af] leading-relaxed max-w-md mx-auto">

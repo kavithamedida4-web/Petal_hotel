@@ -41,9 +41,15 @@
 }
 
 /* Unified section headings: exact same font, size, and 600 weight across entire site */
-.section-title {
-  font-family: var(--font-serif);
+.section-title,
+.section-title span,
+.section-title strong,
+.section-title * {
+  font-family: var(--font-serif) !important;
   font-weight: 600 !important;
+}
+
+.section-title {
   font-size: 28px;
   line-height: 1.18;
   letter-spacing: -0.02em;

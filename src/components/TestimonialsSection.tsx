@@ -46,12 +46,12 @@ export default function TestimonialsSection() {
   return (
     <section id="testimonials" className="w-full bg-[#f9f6f0] py-16 sm:py-20 lg:py-24 relative overflow-hidden border-t border-[#ede7de]">
       <div className="max-w-7xl mx-auto px-5 sm:px-10 lg:px-14">
-        
+
         {/* Section Header */}
         <div className="text-center max-w-2xl mx-auto mb-10 sm:mb-14">
           {/* Main Title with Dual Tone - font-serif font-semibold (weight 600) */}
-          <h2 className="section-title text-[#183b32] mb-3.5">
-            What Our Customers <span className="text-[#b59a6a]">Say</span>
+          <h2 className="section-title text-[#183b32] mb-3.5" style={{ fontWeight: 600 }}>
+            What Our Customers <span className="text-[#b59a6a]" style={{ fontWeight: 600 }}>Say</span>
           </h2>
 
           {/* Subtitle Description */}
@@ -62,7 +62,7 @@ export default function TestimonialsSection() {
 
         {/* Testimonials Carousel Container with Navigation Arrows */}
         <div className="relative">
-          
+
           {/* Floating Left Arrow */}
           <button
             onClick={() => scroll("left")}

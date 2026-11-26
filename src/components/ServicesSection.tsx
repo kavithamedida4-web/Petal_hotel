@@ -59,7 +59,7 @@ export default function ServicesSection() {
       {/* Header with Title and Scroll Arrows */}
       <div className="max-w-7xl mx-auto px-6 sm:px-10 lg:px-16 mb-8 sm:mb-10 flex flex-col sm:flex-row sm:items-end justify-between gap-4">
         <div>
-          <h2 className="section-title text-[#183b32]">
+          <h2 className="section-title text-[#183b32]" style={{ fontWeight: 600 }}>
             Find Services Based On Your Interests
           </h2>
         </div>

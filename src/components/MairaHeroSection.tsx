@@ -157,10 +157,10 @@ export default function MairaHeroSection() {
             </div>
 
             {/* Main Headline - Simple, clean, and elegant with Shamshabad highlight */}
-            <h1 className="section-title font-serif font-semibold text-[28px] sm:text-[36px] lg:text-[44px] leading-tight text-[#183b32] tracking-tight mb-2 sm:mb-3">
+            <h1 className="section-title text-[#183b32] mb-2 sm:mb-3" style={{ fontWeight: 600 }}>
               Welcome to<br />
               The Pearl Hotel in<br />
-              <span className="text-[#b59a6a]">Shamshabad</span>
+              <span className="text-[#b59a6a]" style={{ fontWeight: 600 }}>Shamshabad</span>
             </h1>
 
             {/* Decorative Subtle Line */}

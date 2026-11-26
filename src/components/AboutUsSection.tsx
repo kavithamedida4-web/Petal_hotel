@@ -8,7 +8,7 @@ export default function AboutUsSection() {
     <section id="about" className="w-full bg-[#f9f6f0] py-16 sm:py-24 overflow-x-hidden">
       <div className="max-w-7xl mx-auto px-5 sm:px-10 lg:px-14">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
-          
+
           {/* Left: Overlapping Dual Images Layout matching reference */}
           <div className="relative w-full max-w-lg mx-auto lg:max-w-none h-[420px] sm:h-[480px]">
             {/* Main large back image with rounded soft corner */}
@@ -42,7 +42,7 @@ export default function AboutUsSection() {
             </span>
 
             {/* Hotel name heading - font-serif font-semibold (weight 600) */}
-            <h2 className="section-title text-[#183b32] mb-5">
+            <h2 className="section-title text-[#183b32] mb-5" style={{ fontWeight: 600 }}>
               The Pearl Hotel Hyderabad
             </h2>
 

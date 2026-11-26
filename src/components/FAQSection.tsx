@@ -64,12 +64,12 @@ export default function FAQSection() {
   return (
     <section id="faqs" className="w-full bg-[#f9f6f0] py-16 sm:py-20 lg:py-24 border-t border-[#ede7de] overflow-x-hidden">
       <div className="max-w-3xl mx-auto px-5 sm:px-8">
-        
+
         {/* Header - Styled with Website Brand Colors */}
         <div className="text-center mb-8 sm:mb-12">
           {/* Heading with Brand Green + Gold - font-serif font-semibold (weight 600) */}
-          <h2 className="section-title text-[#183b32]">
-            Common <span className="text-[#b59a6a]">Questions</span>
+          <h2 className="section-title text-[#183b32]" style={{ fontWeight: 600 }}>
+            Common <span className="text-[#b59a6a]" style={{ fontWeight: 600 }}>Questions</span>
           </h2>
         </div>
 
@@ -81,28 +81,25 @@ export default function FAQSection() {
             return (
               <div
                 key={faq.id}
-                className={`rounded-2xl transition-all duration-300 overflow-hidden cursor-pointer ${
-                  isOpen
-                    ? "bg-[#edf5f1] border-2 border-[#183b32] shadow-sm"
-                    : "bg-white border border-[#eae4da] hover:border-[#183b32]/40 shadow-xs"
-                }`}
+                className={`rounded-2xl transition-all duration-300 overflow-hidden cursor-pointer ${isOpen
+                  ? "bg-[#edf5f1] border-2 border-[#183b32] shadow-sm"
+                  : "bg-white border border-[#eae4da] hover:border-[#183b32]/40 shadow-xs"
+                  }`}
                 onClick={() => toggle(faq.id)}
               >
                 {/* Accordion Question Header */}
                 <div className="p-5 sm:p-6 flex items-center justify-between gap-4">
                   <h3
-                    className={`text-sm sm:text-base font-semibold leading-snug transition-colors ${
-                      isOpen ? "text-[#183b32]" : "text-[#183b32]/90"
-                    }`}
+                    className={`text-sm sm:text-base font-semibold leading-snug transition-colors ${isOpen ? "text-[#183b32]" : "text-[#183b32]/90"
+                      }`}
                   >
                     {faq.question}
                   </h3>
 
                   <button
                     aria-label={isOpen ? "Collapse question" : "Expand question"}
-                    className={`shrink-0 w-7 h-7 rounded-full flex items-center justify-center transition-colors ${
-                      isOpen ? "text-[#183b32] bg-[#183b32]/10" : "text-[#8c7b6c]"
-                    }`}
+                    className={`shrink-0 w-7 h-7 rounded-full flex items-center justify-center transition-colors ${isOpen ? "text-[#183b32] bg-[#183b32]/10" : "text-[#8c7b6c]"
+                      }`}
                   >
                     {isOpen ? <ChevronUp size={18} strokeWidth={2.2} /> : <ChevronDown size={18} />}
                   </button>

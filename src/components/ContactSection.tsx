@@ -63,11 +63,11 @@ export default function ContactSection() {
       <div className="absolute bottom-10 -right-32 w-72 h-72 bg-[#183b32]/10 rounded-full blur-3xl pointer-events-none" />
 
       <div className="max-w-2xl mx-auto px-4 sm:px-6 relative z-10">
-        
+
         {/* Compact Section Header */}
         <div className="text-center max-w-lg mx-auto mb-6 sm:mb-8">
-          <h2 className="section-title text-[#183b32] mb-1.5">
-            Plan Your Stay <span className="text-[#b59a6a]">With Us</span>
+          <h2 className="section-title text-[#183b32] mb-1.5" style={{ fontWeight: 600 }}>
+            Plan Your Stay <span className="text-[#b59a6a]" style={{ fontWeight: 600 }}>With Us</span>
           </h2>
 
           <p className="text-xs text-[#525d58] leading-relaxed">
@@ -77,7 +77,7 @@ export default function ContactSection() {
 
         {/* Compact Form Card */}
         <div className="bg-white rounded-2xl sm:rounded-3xl p-5 sm:p-7 border border-[#e5decb] shadow-lg shadow-[#183b32]/5 relative overflow-hidden">
-          
+
           {/* Top Brand Color Accent Bar */}
           <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-[#183b32] via-[#b59a6a] to-[#183b32]" />
 
@@ -113,7 +113,7 @@ export default function ContactSection() {
             </div>
           ) : (
             <form onSubmit={handleSubmit} className="flex flex-col gap-3.5 pt-0.5">
-              
+
               {/* Form Title */}
               <div className="border-b border-[#f0eae1] pb-2.5 flex items-baseline justify-between">
                 <h3 className="font-serif text-lg sm:text-xl text-[#183b32] font-medium">

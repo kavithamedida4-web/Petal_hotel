@@ -47,7 +47,7 @@ export default function HowItWorksSection() {
     <section className="w-full bg-[#17181c] text-white py-12 lg:py-16 relative overflow-hidden">
       {/* Section Header */}
       <div className="max-w-5xl mx-auto px-6 text-center mb-10 lg:mb-12">
-        <h2 className="section-title text-white">
+        <h2 className="section-title text-white" style={{ fontWeight: 600 }}>
           How It Works
         </h2>
       </div>
@@ -55,7 +55,7 @@ export default function HowItWorksSection() {
       {/* Main Interactive Grid - Compact Scale */}
       <div className="max-w-5xl mx-auto px-6 sm:px-10">
         <div className="relative flex flex-col lg:flex-row items-center justify-center gap-8 lg:gap-6">
-          
+
           {/* Left Column: Steps 01 & 02 */}
           <div className="w-full lg:w-[30%] flex flex-col justify-center gap-6 sm:gap-8 lg:gap-14 z-10">
             {/* Step 01 */}
@@ -98,7 +98,7 @@ export default function HowItWorksSection() {
           {/* Center Image with Organic Asymmetric Leaf Curve & Center Badge */}
           <div className="relative w-full max-w-[260px] sm:max-w-[290px] lg:max-w-[320px] aspect-[4/5] mx-auto z-0 shrink-0">
             {/* The Asymmetric Curved Image Shape */}
-            <div 
+            <div
               className="relative w-full h-full overflow-hidden shadow-2xl border border-white/10"
               style={{
                 borderRadius: "110px 14px 110px 14px",
