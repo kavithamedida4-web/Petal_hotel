@@ -1,5 +1,5 @@
-@import "tailwindcss";
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..700;1,400..700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap');
+@import "tailwindcss";
 
 @theme {
   --font-serif: "Playfair Display", Georgia, Cambria, serif;
@@ -40,29 +40,33 @@
   border-bottom-right-radius: 6px;
 }
 
-/* Unified section headings: exact same font, size, and 500 weight across entire site */
+/* Unified section headings: modern bold sans-serif matching reference image */
 .section-title,
 .section-title span,
 .section-title strong,
 .section-title * {
-  font-family: var(--font-serif) !important;
-  font-weight: 500 !important;
+  font-family: var(--font-sans) !important;
+  font-weight: 700 !important;
 }
 
 .section-title {
-  font-size: 28px;
-  line-height: 1.18;
-  letter-spacing: -0.02em;
+  font-family: var(--font-sans) !important;
+  font-weight: 700 !important;
+  font-size: 32px;
+  line-height: 1.15;
+  letter-spacing: -0.025em;
 }
 
 @media (min-width: 640px) {
   .section-title {
-    font-size: 36px;
+    font-size: 40px;
+    line-height: 1.14;
   }
 }
 
 @media (min-width: 1024px) {
   .section-title {
-    font-size: 44px;
+    font-size: 48px;
+    line-height: 1.12;
   }
 }
