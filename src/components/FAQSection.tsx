@@ -68,7 +68,7 @@ export default function FAQSection() {
         {/* Header - Styled with Website Brand Colors */}
         <div className="text-center mb-8 sm:mb-12">
           {/* Heading with Brand Green + Gold - font-serif font-semibold (weight 600) */}
-          <h2 className="font-serif font-semibold text-[28px] sm:text-[36px] lg:text-[44px] leading-tight text-[#183b32] tracking-tight">
+          <h2 className="section-title text-[#183b32]">
             Common <span className="text-[#b59a6a]">Questions</span>
           </h2>
         </div>

@@ -42,7 +42,7 @@ export default function AboutUsSection() {
             </span>
 
             {/* Hotel name heading - font-serif font-semibold (weight 600) */}
-            <h2 className="font-serif font-semibold text-[28px] sm:text-[36px] lg:text-[44px] leading-tight text-[#183b32] tracking-tight mb-5">
+            <h2 className="section-title text-[#183b32] mb-5">
               The Pearl Hotel Hyderabad
             </h2>
 

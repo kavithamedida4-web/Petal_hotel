@@ -39,3 +39,24 @@
   border-top-right-radius: 6px;
   border-bottom-right-radius: 6px;
 }
+
+/* Unified section headings: exact same font, size, and 600 weight across entire site */
+.section-title {
+  font-family: var(--font-serif);
+  font-weight: 600 !important;
+  font-size: 28px;
+  line-height: 1.18;
+  letter-spacing: -0.02em;
+}
+
+@media (min-width: 640px) {
+  .section-title {
+    font-size: 36px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .section-title {
+    font-size: 44px;
+  }
+}

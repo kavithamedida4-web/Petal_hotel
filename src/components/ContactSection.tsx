@@ -66,7 +66,7 @@ export default function ContactSection() {
         
         {/* Compact Section Header */}
         <div className="text-center max-w-lg mx-auto mb-6 sm:mb-8">
-          <h2 className="font-serif font-semibold text-[28px] sm:text-[36px] lg:text-[44px] leading-tight text-[#183b32] tracking-tight mb-1.5">
+          <h2 className="section-title text-[#183b32] mb-1.5">
             Plan Your Stay <span className="text-[#b59a6a]">With Us</span>
           </h2>
 

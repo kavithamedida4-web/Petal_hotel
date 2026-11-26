@@ -50,7 +50,7 @@ export default function TestimonialsSection() {
         {/* Section Header */}
         <div className="text-center max-w-2xl mx-auto mb-10 sm:mb-14">
           {/* Main Title with Dual Tone - font-serif font-semibold (weight 600) */}
-          <h2 className="font-serif font-semibold text-[28px] sm:text-[36px] lg:text-[44px] leading-tight text-[#183b32] tracking-tight mb-3.5">
+          <h2 className="section-title text-[#183b32] mb-3.5">
             What Our Customers <span className="text-[#b59a6a]">Say</span>
           </h2>
 

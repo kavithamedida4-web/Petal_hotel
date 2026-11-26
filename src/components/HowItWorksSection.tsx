@@ -47,7 +47,7 @@ export default function HowItWorksSection() {
     <section className="w-full bg-[#17181c] text-white py-12 lg:py-16 relative overflow-hidden">
       {/* Section Header */}
       <div className="max-w-5xl mx-auto px-6 text-center mb-10 lg:mb-12">
-        <h2 className="font-serif font-semibold text-[28px] sm:text-[36px] lg:text-[44px] leading-tight text-white tracking-tight">
+        <h2 className="section-title text-white">
           How It Works
         </h2>
       </div>

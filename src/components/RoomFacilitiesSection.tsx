@@ -114,7 +114,7 @@ export default function RoomFacilitiesSection() {
       
       {/* Section Heading */}
       <div className="max-w-3xl mx-auto px-4 mb-8 sm:mb-12 text-center">
-        <h2 className="font-serif font-semibold text-[28px] sm:text-[36px] lg:text-[44px] leading-tight text-[#183b32] tracking-tight">
+        <h2 className="section-title text-[#183b32]">
           Facilities at <span className="text-[#b59a6a]">The Pearl Hotel</span>
         </h2>
         <p className="text-xs sm:text-sm text-[#5a6560] mt-2 max-w-lg mx-auto leading-relaxed">

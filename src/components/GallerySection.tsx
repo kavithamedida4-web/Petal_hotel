@@ -118,7 +118,7 @@ export default function GallerySection() {
         
         {/* Compact Section Header */}
         <div className="max-w-2xl mx-auto mb-5 sm:mb-8 text-center">
-          <h2 className="font-serif font-semibold text-[28px] sm:text-[36px] lg:text-[44px] leading-tight text-white tracking-tight mb-1.5">
+          <h2 className="section-title text-white mb-1.5">
             Our Curated <span className="text-[#b59a6a]">Photo Gallery</span>
           </h2>
 

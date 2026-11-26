@@ -157,7 +157,7 @@ export default function MairaHeroSection() {
             </div>
 
             {/* Main Headline highlighting SHAMSHABAD - font-serif font-semibold (weight 600) */}
-            <h1 className="font-serif font-semibold text-[28px] sm:text-[36px] lg:text-[44px] leading-tight text-[#183b32] tracking-tight mb-2 sm:mb-3">
+            <h1 className="section-title text-[#183b32] mb-2 sm:mb-3">
               Comfort, elegance &amp;<br />
               hospitality near<br />
               <span className="text-[#b59a6a]">Hyderabad Airport</span>
