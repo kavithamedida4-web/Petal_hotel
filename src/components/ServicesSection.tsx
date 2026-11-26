@@ -7,22 +7,22 @@ import { ArrowLeft, ArrowRight } from "lucide-react";
 const services = [
   {
     title: "Deluxe Room",
-    subtitle: "1 king bed, up to 3 adults. Includes AC, TV, balcony, and attached bathroom.",
+    subtitle: "Spacious king-size bed, private balcony, warm lighting, flat-screen TV, and attached bathroom.",
     img: "/images/pearl_deluxe_room_1.jpg",
   },
   {
     title: "Twin Room",
-    subtitle: "2 single beds, up to 2 adults. Includes AC, TV, balcony, and attached bathroom.",
+    subtitle: "Two comfortable single beds, private balcony, air conditioning, and clean attached bathroom.",
     img: "/images/pearl_twin_room.jpg",
   },
   {
     title: "Suite Room",
-    subtitle: "1 king bed and living area, up to 3 adults. Includes AC, TV, balcony, and attached bathroom.",
+    subtitle: "Generous suite layout with king bed, living area, private balcony, and attached bathroom.",
     img: "/images/pearl_suite_room.jpg",
   },
   {
     title: "In-House Restaurant & Room Service",
-    subtitle: "Freshly prepared South & North Indian dishes, daily breakfast, and 24-hr in-room dining.",
+    subtitle: "Freshly prepared South & North Indian dishes, daily breakfast buffet, and 24-hr in-room dining.",
     img: "/images/pearl_restaurant.jpg",
   },
   {
@@ -103,11 +103,11 @@ export default function ServicesSection() {
             </div>
 
             {/* Clean Gold/tan info bar with uniform fixed height across all cards */}
-            <div className="bg-[#b59a6a] px-6 py-4 sm:py-5 h-[105px] sm:h-[115px] flex flex-col justify-center">
-              <p className="text-white font-serif text-lg sm:text-xl font-medium leading-snug line-clamp-1">
+            <div className="bg-[#b59a6a] px-6 py-4 sm:py-5 min-h-[110px] sm:min-h-[120px] flex flex-col justify-start">
+              <p className="text-white font-serif text-lg sm:text-xl font-medium leading-tight">
                 {svc.title}
               </p>
-              <p className="text-white/95 text-xs sm:text-[13px] mt-1.5 font-sans leading-tight line-clamp-2">
+              <p className="text-white/95 text-xs sm:text-[13px] mt-2 font-sans leading-relaxed line-clamp-2">
                 {svc.subtitle}
               </p>
             </div>
