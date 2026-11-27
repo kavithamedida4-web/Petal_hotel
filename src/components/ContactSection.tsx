@@ -18,6 +18,8 @@ import {
 export default function ContactSection() {
   const [submitted, setSubmitted] = useState(false);
   const [formData, setFormData] = useState({
+    bookingType: "Individual Booking",
+    numberOfRooms: "5 Rooms",
     name: "",
     email: "",
     phone: "",
@@ -35,6 +37,8 @@ export default function ContactSection() {
     const messageLines = [
       `*New Reservation / Inquiry - The Pearl Hotel Hyderabad*`,
       `---------------------------------------`,
+      `📋 *Booking Type:* ${formData.bookingType}`,
+      ...(formData.bookingType === "Group Booking" ? [`🏢 *Number of Rooms:* ${formData.numberOfRooms}`] : []),
       `👤 *Name:* ${formData.name}`,
       `📞 *Phone:* ${formData.phone}`,
       `✉️ *Email:* ${formData.email}`,
@@ -98,12 +102,12 @@ export default function ContactSection() {
                   Booking Request Sent!
                 </h3>
                 <p className="text-xs sm:text-sm text-[#525d58] max-w-sm leading-relaxed mb-6">
-                  Thank you, <span className="font-semibold text-[#0f263d]">{formData.name || "Guest"}</span>. Your booking request has been sent to our front desk at <span className="font-semibold text-[#0f263d]">+91 81066 65517</span>. We will contact you shortly.
+                  Thank you, <span className="font-semibold text-[#0f263d]">{formData.name || "Guest"}</span>. Your {formData.bookingType.toLowerCase()} request{formData.bookingType === "Group Booking" ? ` for ${formData.numberOfRooms}` : ""} has been sent to our front desk at <span className="font-semibold text-[#0f263d]">+91 81066 65517</span>. We will contact you shortly.
                 </p>
                 <div className="flex flex-wrap items-center justify-center gap-3">
                   <a
                     href={`https://wa.me/918106665517?text=${encodeURIComponent(
-                      `*Reservation Inquiry - The Pearl Hotel Hyderabad*\nName: ${formData.name}\nPhone: ${formData.phone}\nSuite: ${formData.roomType}\nGuests: ${formData.guests}`
+                      `*Reservation Inquiry - The Pearl Hotel Hyderabad*\nType: ${formData.bookingType}${formData.bookingType === "Group Booking" ? ` (${formData.numberOfRooms})` : ""}\nName: ${formData.name}\nPhone: ${formData.phone}\nSuite: ${formData.roomType}\nGuests: ${formData.guests}`
                     )}`}
                     target="_blank"
                     rel="noopener noreferrer"
@@ -130,6 +134,44 @@ export default function ContactSection() {
                   <span className="text-[10.5px] text-[#8c8273]">
                     Prompt 15-min response
                   </span>
+                </div>
+
+                {/* Booking Type Field & Dynamic Number of Rooms */}
+                <div className={`grid ${formData.bookingType === "Group Booking" ? "grid-cols-1 sm:grid-cols-2" : "grid-cols-1"} gap-3`}>
+                  <div>
+                    <label className="block text-[11px] sm:text-xs font-semibold text-[#0f263d] mb-1 flex items-center gap-1">
+                      <Users size={13} className="text-[#b59a6a]" />
+                      <span>Booking Type</span> <span className="text-[#b59a6a]">*</span>
+                    </label>
+                    <select
+                      value={formData.bookingType}
+                      onChange={(e) => setFormData({ ...formData, bookingType: e.target.value })}
+                      className="w-full px-3 py-2 rounded-lg sm:rounded-xl bg-[#fcfaf7] border border-[#e2dacb] text-[#0f263d] text-xs sm:text-[13px] focus:outline-none focus:border-[#0f263d] transition-all cursor-pointer font-medium"
+                    >
+                      <option value="Individual Booking">Individual Booking</option>
+                      <option value="Group Booking">Group Booking</option>
+                    </select>
+                  </div>
+
+                  {formData.bookingType === "Group Booking" && (
+                    <div className="animate-fadeIn">
+                      <label className="block text-[11px] sm:text-xs font-semibold text-[#0f263d] mb-1 flex items-center gap-1">
+                        <BedDouble size={13} className="text-[#b59a6a]" />
+                        <span>Number of Rooms (1–50)</span> <span className="text-[#b59a6a]">*</span>
+                      </label>
+                      <select
+                        value={formData.numberOfRooms}
+                        onChange={(e) => setFormData({ ...formData, numberOfRooms: e.target.value })}
+                        className="w-full px-3 py-2 rounded-lg sm:rounded-xl bg-[#fcfaf7] border border-[#b59a6a] text-[#0f263d] text-xs sm:text-[13px] focus:outline-none focus:border-[#0f263d] transition-all cursor-pointer font-medium"
+                      >
+                        {Array.from({ length: 50 }, (_, i) => i + 1).map((num) => (
+                          <option key={num} value={`${num} ${num === 1 ? "Room" : "Rooms"}`}>
+                            {num} {num === 1 ? "Room" : "Rooms"}
+                          </option>
+                        ))}
+                      </select>
+                    </div>
+                  )}
                 </div>
 
                 {/* Full Name */}
