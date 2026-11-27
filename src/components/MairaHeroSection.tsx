@@ -135,16 +135,6 @@ export default function MairaHeroSection() {
         <div className="relative z-20 w-full lg:w-[50%] xl:w-[48%] px-5 sm:px-8 lg:pl-14 lg:pr-8 xl:pl-20 xl:pr-10 2xl:pl-28 py-3.5 sm:py-12 lg:py-16 flex flex-col justify-center order-1">
 
           <div className="max-w-[490px] flex flex-col items-start my-auto">
-
-            {/* Eyebrow Label with Shamshabad Highlight */}
-            <div className="flex items-center gap-1.5 sm:gap-2 mb-2 sm:mb-5">
-              <span className="w-1.5 h-1.5 rounded-full bg-[#a0856c] inline-block shrink-0" />
-              <span className="text-[9.5px] sm:text-[11px] font-bold tracking-[0.14em] sm:tracking-[0.2em] text-[#a0856c] uppercase">
-                <span className="sm:hidden">THE PEARL HOTEL &middot; SHAMSHABAD</span>
-                <span className="hidden sm:inline">THE PEARL HOTEL HYDERABAD - 47 ROOMS IN SHAMSHABAD</span>
-              </span>
-            </div>
-
             {/* Main Headline - Bold Sans-Serif matching reference screenshot */}
             <h1 className="section-title text-[#0f263d] mb-2 sm:mb-3">
               Welcome to<br />
