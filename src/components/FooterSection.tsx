@@ -147,7 +147,26 @@ export default function FooterSection() {
                   <Phone size={16} />
                 </div>
                 <div className="flex flex-col gap-0.5">
+                  <span className="text-[10px] text-[#8e95a5] uppercase font-bold tracking-wider">Phone Call</span>
                   <a href="tel:+918106665517" className="text-white font-medium hover:text-[#b59a6a] transition-colors tracking-wide">
+                    +91 81066 65517
+                  </a>
+                </div>
+              </div>
+
+              {/* WhatsApp */}
+              <div className="flex items-start gap-3">
+                <div className="w-5 h-5 flex items-center justify-center shrink-0 mt-0.5 text-[#25D366]">
+                  <MessageCircle size={16} />
+                </div>
+                <div className="flex flex-col gap-0.5">
+                  <span className="text-[10px] text-[#8e95a5] uppercase font-bold tracking-wider">WhatsApp</span>
+                  <a
+                    href="https://wa.me/918106665517"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-white font-medium hover:text-[#25D366] transition-colors tracking-wide"
+                  >
                     +91 81066 65517
                   </a>
                 </div>
