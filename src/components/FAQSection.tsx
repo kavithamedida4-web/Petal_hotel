@@ -44,13 +44,19 @@ const faqs = [
     id: 7,
     question: "What identity documents and house rules must guests follow?",
     answer:
-      "All adult guests must present an original government-issued photo ID (Aadhaar, Passport, Driving License, or Voter ID; PAN card is not valid address proof). Smoking is restricted to permitted areas. Quiet hours are observed at night. Pets require prior management approval.",
+      "All adult guests must present an original government-issued photo ID (Aadhaar, Passport, Driving License, or Voter ID; PAN card is not accepted). Smoking is restricted to permitted areas. Quiet hours are observed at night. Visitors and outside food are subject to hotel policy. Pets require prior management approval. Guests are responsible for their belongings.",
   },
   {
     id: 8,
     question: "How can I book a room or contact hotel reception?",
     answer:
-      "You can call or WhatsApp our guest reception directly at +91 97000 00970, or email info@pearlhotelhyderabad.com for instant booking confirmation without any portal commissions.",
+      "You can call or WhatsApp our guest reception directly at +91 97000 00970 (or +91 81066 65517), or email info@pearlhotelhyderabad.com for instant direct booking with zero commission fees.",
+  },
+  {
+    id: 9,
+    question: "Can I book through MakeMyTrip, Goibibo, Booking.com, or Agoda?",
+    answer:
+      "Our listings on major travel portals (MakeMyTrip, Goibibo, Booking.com, and Agoda) will be live soon. However, booking directly via our website enquiry form, Call, or WhatsApp guarantees you the best direct rates, free room selection, and instant front desk confirmation.",
   },
 ];
 

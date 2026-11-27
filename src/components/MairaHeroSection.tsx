@@ -155,13 +155,13 @@ export default function MairaHeroSection() {
             {/* Decorative Subtle Line */}
             <div className="w-10 h-[2px] bg-[#b89b82] mb-2.5 sm:mb-4" />
 
-            {/* Subtitle / Description Copy - Compact on mobile, full on desktop */}
-            <p className="text-[#525d58] text-[11.5px] sm:text-[13px] leading-relaxed max-w-[390px] font-normal mb-3 sm:mb-8">
+            {/* Subtitle / Description Copy - Featuring Official Tagline */}
+            <p className="text-[#525d58] text-[11.5px] sm:text-[13px] leading-relaxed max-w-[440px] font-normal mb-3 sm:mb-8">
               <span className="sm:hidden">
-                47 well-appointed rooms in <strong className="text-[#b59a6a] font-semibold">Shamshabad</strong>, minutes from RGIA Airport with AC, TV, balcony, lift, power backup &amp; 24-hr front desk.
+                <strong className="text-[#0f263d] font-semibold">Comfort, Elegance &amp; Hospitality</strong> &ndash; 47 well-appointed rooms in Shamshabad near RGIA Airport. Starting from ₹2,500/night.
               </span>
               <span className="hidden sm:inline">
-                A comfortable and affordable stay in <strong className="text-[#b59a6a] font-semibold">Shamshabad</strong> near Rajiv Gandhi International Airport. Featuring 47 well-appointed rooms, welcoming families, couples, business travellers, tourists, pilgrims, and groups.
+                <strong className="text-[#0f263d] font-semibold">&ldquo;Comfort, Elegance &amp; Hospitality &ndash; Your Perfect Stay Near Hyderabad Airport.&rdquo;</strong> Budget-friendly luxury featuring 47 well-appointed rooms, welcoming families, couples, business travellers, tourists, pilgrims, and groups. Starting from ₹2,500/night.
               </span>
             </p>
 

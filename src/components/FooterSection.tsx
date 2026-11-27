@@ -146,9 +146,14 @@ export default function FooterSection() {
                 <div className="w-5 h-5 flex items-center justify-center shrink-0 mt-0.5 text-[#b59a6a]">
                   <Phone size={16} />
                 </div>
-                <a href="tel:+919700000970" className="text-white font-medium hover:text-[#b59a6a] transition-colors tracking-wide">
-                  +91 97000 00970
-                </a>
+                <div className="flex flex-col gap-0.5">
+                  <a href="tel:+919700000970" className="text-white font-medium hover:text-[#b59a6a] transition-colors tracking-wide">
+                    +91 97000 00970
+                  </a>
+                  <a href="tel:+918106665517" className="text-[#9ca3af] text-xs hover:text-[#b59a6a] transition-colors tracking-wide">
+                    +91 81066 65517
+                  </a>
+                </div>
               </div>
 
               {/* Email */}

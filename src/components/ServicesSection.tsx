@@ -7,17 +7,17 @@ import { ArrowLeft, ArrowRight } from "lucide-react";
 const services = [
   {
     title: "Deluxe Room",
-    subtitle: "Spacious king-size bed, private balcony, warm lighting, flat-screen TV, and attached bathroom.",
+    subtitle: "1 king bed, up to 3 adults. AC, TV, private balcony & attached bath. Starting from ₹2,500/night.",
     img: "/images/pearl_deluxe_room_1.jpg",
   },
   {
     title: "Twin Room",
-    subtitle: "Two comfortable single beds, private balcony, air conditioning, and clean attached bathroom.",
+    subtitle: "2 single beds, up to 2 adults. AC, TV, private balcony & attached bath. Starting from ₹2,500/night.",
     img: "/images/pearl_twin_room.jpg",
   },
   {
     title: "Suite Room",
-    subtitle: "Generous suite layout with king bed, living area, private balcony, and attached bathroom.",
+    subtitle: "1 king bed & living area, up to 3 adults. AC, TV, balcony & attached bath. Starting from ₹3,500/night.",
     img: "/images/pearl_suite_room.jpg",
   },
   {
@@ -113,6 +113,17 @@ export default function ServicesSection() {
             </div>
           </div>
         ))}
+      {/* Bottom Room Policy & Inclusions Note from Client Brief */}
+      <div className="max-w-7xl mx-auto px-6 sm:px-10 lg:px-16 mt-6 sm:mt-8">
+        <div className="bg-[#f0ebe1] border border-[#d8cca8] rounded-xl sm:rounded-2xl p-3.5 sm:p-4 text-center text-[#525d58] text-xs sm:text-[13px] flex flex-wrap items-center justify-center gap-x-5 gap-y-2">
+          <span>🏨 <strong>All Rooms Include:</strong> AC, Flat-Screen TV, Balcony &amp; Attached Bathroom</span>
+          <span className="hidden sm:inline text-[#b59a6a]">&bull;</span>
+          <span>🛏️ <strong>Extra Bed:</strong> ₹999 / night</span>
+          <span className="hidden sm:inline text-[#b59a6a]">&bull;</span>
+          <span>👶 <strong>Child Policy:</strong> Free stay for kids under 6</span>
+          <span className="hidden sm:inline text-[#b59a6a]">&bull;</span>
+          <span>🕛 <strong>Check-in &amp; Check-out:</strong> 12:00 noon for both</span>
+        </div>
       </div>
     </section>
   );
