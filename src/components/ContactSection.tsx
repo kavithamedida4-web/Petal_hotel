@@ -48,7 +48,7 @@ export default function ContactSection() {
     ];
 
     const encodedText = encodeURIComponent(messageLines.join("\n"));
-    const whatsappUrl = `https://wa.me/918106665517?text=${encodedText}`;
+    const whatsappUrl = `https://wa.me/919700000970?text=${encodedText}`;
 
     // Open WhatsApp with pre-filled form info
     if (typeof window !== "undefined") {
@@ -98,11 +98,11 @@ export default function ContactSection() {
                   Booking Request Sent!
                 </h3>
                 <p className="text-xs sm:text-sm text-[#525d58] max-w-sm leading-relaxed mb-6">
-                  Thank you, <span className="font-semibold text-[#183b32]">{formData.name || "Guest"}</span>. Your booking request has been sent to our front desk at <span className="font-semibold text-[#183b32]">+91 81066 65517</span>. We will contact you shortly.
+                  Thank you, <span className="font-semibold text-[#183b32]">{formData.name || "Guest"}</span>. Your booking request has been sent to our front desk at <span className="font-semibold text-[#183b32]">+91 97000 00970</span>. We will contact you shortly.
                 </p>
                 <div className="flex flex-wrap items-center justify-center gap-3">
                   <a
-                    href={`https://wa.me/918106665517?text=${encodeURIComponent(
+                    href={`https://wa.me/919700000970?text=${encodeURIComponent(
                       `*Reservation Inquiry - The Pearl Hotel Hyderabad*\nName: ${formData.name}\nPhone: ${formData.phone}\nSuite: ${formData.roomType}\nGuests: ${formData.guests}`
                     )}`}
                     target="_blank"
@@ -184,7 +184,7 @@ export default function ContactSection() {
                       <input
                         type="tel"
                         required
-                        placeholder="+91 81066 65517"
+                        placeholder="+91 97000 00970"
                         value={formData.phone}
                         onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
                         className="w-full pl-9 pr-3 py-2 rounded-lg sm:rounded-xl bg-[#fcfaf7] border border-[#e2dacb] text-[#183b32] placeholder:text-[#a8a194] text-xs sm:text-[13px] focus:outline-none focus:border-[#183b32] focus:bg-white focus:ring-1 focus:ring-[#183b32]/20 transition-all"
