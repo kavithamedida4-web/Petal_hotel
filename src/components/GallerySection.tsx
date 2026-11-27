@@ -105,16 +105,8 @@ const mobileImages = [
   { id: 6, src: "/images/pearl_corridor.jpg", title: "Hotel Corridor" },
 ];
 
-const categories: Category[] = ["All", "Suites", "Dining", "Amenities"];
-
 export default function GallerySection() {
-  const [activeCategory, setActiveCategory] = useState<Category>("All");
   const [lightboxImg, setLightboxImg] = useState<{ src: string; title: string } | null>(null);
-
-  const filteredItems =
-    activeCategory === "All"
-      ? galleryItems
-      : galleryItems.filter((item) => item.category === activeCategory);
 
   return (
     <section id="gallery" className="w-full bg-[#17181c] text-white py-10 sm:py-14 relative overflow-hidden">
@@ -171,29 +163,9 @@ export default function GallerySection() {
            ============================================================ */}
         <div className="hidden md:block">
 
-          {/* Minimal Filter Tabs */}
-          <div className="flex items-center justify-center gap-1 sm:gap-1.5 mb-6">
-            {categories.map((cat) => {
-              const active = activeCategory === cat;
-              return (
-                <button
-                  key={cat}
-                  onClick={() => setActiveCategory(cat)}
-                  className={`px-3.5 py-1 rounded-full text-xs font-medium tracking-wide transition-all cursor-pointer ${
-                    active
-                      ? "bg-[#b59a6a] text-white shadow-xs"
-                      : "bg-[#212329] text-[#9ca3af] hover:text-white hover:bg-[#2b2d35]"
-                  }`}
-                >
-                  {cat}
-                </button>
-              );
-            })}
-          </div>
-
           {/* Bento Grid */}
           <div className="grid grid-cols-12 gap-2.5 sm:gap-3">
-            {filteredItems.map((item) => (
+            {galleryItems.map((item) => (
               <div
                 key={item.id}
                 onClick={() => setLightboxImg({ src: item.src, title: item.title })}
