@@ -50,7 +50,7 @@ const faqs = [
     id: 8,
     question: "How can I book a room or contact hotel reception?",
     answer:
-      "You can call or WhatsApp our guest reception directly at +91 97000 00970 (or +91 81066 65517), or email info@pearlhotelhyderabad.com for instant direct booking with zero commission fees.",
+      "You can call or WhatsApp our guest reception directly at +91 97000 00970, or email info@pearlhotelhyderabad.com for instant direct booking with zero commission fees.",
   },
   {
     id: 9,

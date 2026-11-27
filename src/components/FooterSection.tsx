@@ -150,9 +150,6 @@ export default function FooterSection() {
                   <a href="tel:+919700000970" className="text-white font-medium hover:text-[#b59a6a] transition-colors tracking-wide">
                     +91 97000 00970
                   </a>
-                  <a href="tel:+918106665517" className="text-[#9ca3af] text-xs hover:text-[#b59a6a] transition-colors tracking-wide">
-                    +91 81066 65517
-                  </a>
                 </div>
               </div>
 
