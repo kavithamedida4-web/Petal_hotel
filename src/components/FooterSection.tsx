@@ -2,11 +2,12 @@
 
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { Phone, Mail, MapPin, Clock, MessageCircle } from "lucide-react";
 
 export default function FooterSection() {
   return (
-    <footer className="w-full bg-[#0e1013] text-[#9ca3af] pt-16 sm:pt-20 pb-8 border-t border-white/10 overflow-x-hidden relative font-sans">
+    <footer className="w-full bg-[#091422] text-[#9ca3af] pt-16 sm:pt-20 pb-8 border-t border-white/10 overflow-x-hidden relative font-sans">
       <div className="max-w-7xl mx-auto px-5 sm:px-10 lg:px-14">
         
         {/* Main 4-Column Footer Grid */}
@@ -14,27 +15,15 @@ export default function FooterSection() {
           
           {/* Column 1: Brand Info (4 cols on desktop) */}
           <div className="lg:col-span-4 flex flex-col gap-4 sm:gap-5">
-            {/* Brand Logo matching Header Emblem & Typography */}
-            <Link href="/" className="inline-flex items-center gap-2.5 sm:gap-3 group self-start">
-              <svg
-                className="w-7 h-8 sm:w-8 sm:h-9 text-[#b59a6a] group-hover:text-[#cbb181] transition-colors shrink-0"
-                viewBox="0 0 24 30"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="1.5"
-              >
-                <path d="M4 28V12C4 7.58172 7.58172 4 12 4C16.4183 4 20 7.58172 20 12V28" strokeLinecap="round" />
-                <path d="M7 28V13C7 10.2386 9.23858 8 12 8C14.7614 8 17 10.2386 17 13V28" strokeLinecap="round" strokeWidth="1.1" />
-                <line x1="2" y1="28" x2="22" y2="28" strokeWidth="1.8" strokeLinecap="round" />
-              </svg>
-              <div className="flex flex-col">
-                <span className="font-serif text-xl sm:text-2xl font-medium tracking-tight text-white leading-none">
-                  The Pearl
-                </span>
-                <span className="text-[7.5px] sm:text-[8px] font-bold tracking-[0.2em] text-[#b59a6a] uppercase mt-1">
-                  HOTEL &middot; HYDERABAD
-                </span>
-              </div>
+            {/* Brand Logo with White Typography for Dark Background */}
+            <Link href="/" className="inline-flex items-center group self-start">
+              <Image
+                src="/images/pearl_hotel_logo_white.png"
+                alt="The Pearl Hotel Hyderabad Logo"
+                width={190}
+                height={65}
+                className="h-11 sm:h-13 w-auto object-contain transition-transform group-hover:scale-102"
+              />
             </Link>
 
             {/* Hotel Description with improved line spacing and readability */}

@@ -12,7 +12,7 @@ import FooterSection from "@/components/FooterSection";
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-[#f9f6f0] text-[#183b32] flex flex-col selection:bg-[#183b32] selection:text-white overflow-x-hidden w-full">
+    <main className="min-h-screen bg-[#f9f6f0] text-[#0f263d] flex flex-col selection:bg-[#0f263d] selection:text-white overflow-x-hidden w-full">
       {/* 1. The Pearl Hotel Hyderabad Hero */}
       <MairaHeroSection />
 

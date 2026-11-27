@@ -56,7 +56,7 @@ export default function ServicesSection() {
       {/* Header with Title and Scroll Arrows */}
       <div className="max-w-7xl mx-auto px-6 sm:px-10 lg:px-16 mb-8 sm:mb-10 flex flex-col sm:flex-row sm:items-end justify-between gap-4">
         <div>
-          <h2 className="section-title text-[#183b32]">
+          <h2 className="section-title text-[#0f263d]">
             Find Services Based On Your Interests
           </h2>
         </div>
@@ -65,14 +65,14 @@ export default function ServicesSection() {
         <div className="flex items-center gap-2.5 self-end sm:self-auto">
           <button
             onClick={() => scroll("left")}
-            className="w-10 h-10 rounded-full border border-[#d8d2c7] bg-white text-[#183b32] hover:bg-[#183b32] hover:text-white hover:border-[#183b32] shadow-xs flex items-center justify-center transition-all cursor-pointer"
+            className="w-10 h-10 rounded-full border border-[#d8d2c7] bg-white text-[#0f263d] hover:bg-[#0f263d] hover:text-white hover:border-[#0f263d] shadow-xs flex items-center justify-center transition-all cursor-pointer"
             aria-label="Previous"
           >
             <ArrowLeft size={16} />
           </button>
           <button
             onClick={() => scroll("right")}
-            className="w-10 h-10 rounded-full border border-[#d8d2c7] bg-white text-[#183b32] hover:bg-[#183b32] hover:text-white hover:border-[#183b32] shadow-xs flex items-center justify-center transition-all cursor-pointer"
+            className="w-10 h-10 rounded-full border border-[#d8d2c7] bg-white text-[#0f263d] hover:bg-[#0f263d] hover:text-white hover:border-[#0f263d] shadow-xs flex items-center justify-center transition-all cursor-pointer"
             aria-label="Next"
           >
             <ArrowRight size={16} />

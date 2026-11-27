@@ -46,7 +46,7 @@ export default function TestimonialsSection() {
         {/* Section Header */}
         <div className="text-center max-w-2xl mx-auto mb-10 sm:mb-14">
           {/* Main Title with Dual Tone */}
-          <h2 className="section-title text-[#183b32] mb-3.5">
+          <h2 className="section-title text-[#0f263d] mb-3.5">
             What Our Customers <span className="text-[#b59a6a]">Say</span>
           </h2>
 
@@ -62,7 +62,7 @@ export default function TestimonialsSection() {
           {/* Floating Left Arrow */}
           <button
             onClick={() => scroll("left")}
-            className="hidden sm:flex absolute -left-4 lg:-left-6 top-1/2 -translate-y-1/2 w-11 h-11 rounded-full bg-white text-[#183b32] border border-[#eae5dd] shadow-lg hover:bg-[#183b32] hover:text-white transition-all z-20 items-center justify-center active:scale-95 cursor-pointer"
+            className="hidden sm:flex absolute -left-4 lg:-left-6 top-1/2 -translate-y-1/2 w-11 h-11 rounded-full bg-white text-[#0f263d] border border-[#eae5dd] shadow-lg hover:bg-[#0f263d] hover:text-white transition-all z-20 items-center justify-center active:scale-95 cursor-pointer"
             aria-label="Previous review"
           >
             <ChevronLeft size={20} />
@@ -71,7 +71,7 @@ export default function TestimonialsSection() {
           {/* Floating Right Arrow */}
           <button
             onClick={() => scroll("right")}
-            className="hidden sm:flex absolute -right-4 lg:-right-6 top-1/2 -translate-y-1/2 w-11 h-11 rounded-full bg-white text-[#183b32] border border-[#eae5dd] shadow-lg hover:bg-[#183b32] hover:text-white transition-all z-20 items-center justify-center active:scale-95 cursor-pointer"
+            className="hidden sm:flex absolute -right-4 lg:-right-6 top-1/2 -translate-y-1/2 w-11 h-11 rounded-full bg-white text-[#0f263d] border border-[#eae5dd] shadow-lg hover:bg-[#0f263d] hover:text-white transition-all z-20 items-center justify-center active:scale-95 cursor-pointer"
             aria-label="Next review"
           >
             <ChevronRight size={20} />
@@ -115,7 +115,7 @@ export default function TestimonialsSection() {
 
                 {/* Author Info */}
                 <div className="pt-4 border-t border-[#f0ece4]">
-                  <p className="font-sans font-semibold text-sm text-[#183b32]">
+                  <p className="font-sans font-semibold text-sm text-[#0f263d]">
                     {item.author}
                   </p>
                 </div>

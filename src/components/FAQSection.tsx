@@ -67,8 +67,8 @@ export default function FAQSection() {
 
         {/* Header - Styled with Website Brand Colors */}
         <div className="text-center mb-8 sm:mb-12">
-          {/* Heading with Brand Green + Gold */}
-          <h2 className="section-title text-[#183b32]">
+          {/* Heading with Brand Navy + Gold */}
+          <h2 className="section-title text-[#0f263d]">
             Common <span className="text-[#b59a6a]">Questions</span>
           </h2>
         </div>
@@ -82,15 +82,15 @@ export default function FAQSection() {
               <div
                 key={faq.id}
                 className={`rounded-2xl transition-all duration-300 overflow-hidden cursor-pointer ${isOpen
-                  ? "bg-[#edf5f1] border-2 border-[#183b32] shadow-sm"
-                  : "bg-white border border-[#eae4da] hover:border-[#183b32]/40 shadow-xs"
+                  ? "bg-[#eef4f9] border-2 border-[#0f263d] shadow-sm"
+                  : "bg-white border border-[#eae4da] hover:border-[#0f263d]/40 shadow-xs"
                   }`}
                 onClick={() => toggle(faq.id)}
               >
                 {/* Accordion Question Header */}
                 <div className="p-5 sm:p-6 flex items-center justify-between gap-4">
                   <h3
-                    className={`text-sm sm:text-base font-semibold leading-snug transition-colors ${isOpen ? "text-[#183b32]" : "text-[#183b32]/90"
+                    className={`text-sm sm:text-base font-semibold leading-snug transition-colors ${isOpen ? "text-[#0f263d]" : "text-[#0f263d]/90"
                       }`}
                   >
                     {faq.question}
@@ -98,7 +98,7 @@ export default function FAQSection() {
 
                   <button
                     aria-label={isOpen ? "Collapse question" : "Expand question"}
-                    className={`shrink-0 w-7 h-7 rounded-full flex items-center justify-center transition-colors ${isOpen ? "text-[#183b32] bg-[#183b32]/10" : "text-[#8c7b6c]"
+                    className={`shrink-0 w-7 h-7 rounded-full flex items-center justify-center transition-colors ${isOpen ? "text-[#0f263d] bg-[#0f263d]/10" : "text-[#8c7b6c]"
                       }`}
                   >
                     {isOpen ? <ChevronUp size={18} strokeWidth={2.2} /> : <ChevronDown size={18} />}
@@ -107,7 +107,7 @@ export default function FAQSection() {
 
                 {/* Accordion Answer Content */}
                 {isOpen && (
-                  <div className="px-5 pb-5 sm:px-6 sm:pb-6 pt-0 border-t border-[#183b32]/15 animate-fadeIn">
+                  <div className="px-5 pb-5 sm:px-6 sm:pb-6 pt-0 border-t border-[#0f263d]/15 animate-fadeIn">
                     <p className="text-xs sm:text-[13.5px] text-[#44524c] leading-relaxed pt-3.5 font-normal">
                       {faq.answer}
                     </p>

@@ -22,47 +22,36 @@ export default function MairaHeroSection() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <div className="w-full bg-[#f9f6f0] text-[#183b32] relative overflow-x-hidden">
+    <div className="w-full bg-[#f9f6f0] text-[#0f263d] relative overflow-x-hidden">
 
       {/* Top Navigation Bar */}
       <header className="w-full bg-[#f9f6f0] border-b border-[#eae6df] sticky top-0 z-50">
-        <div className="w-full px-5 sm:px-8 lg:px-14 xl:px-20 2xl:px-28 py-3 sm:py-3.5 flex items-center justify-between">
+        <div className="w-full px-5 sm:px-8 lg:px-14 xl:px-20 2xl:px-28 py-2.5 sm:py-3 flex items-center justify-between">
 
-          {/* Left Brand Logo: Arched French Window + Petal Hotel */}
-          <Link href="/" className="flex items-center gap-2 sm:gap-2.5 group">
-            <svg
-              className="w-6 h-7 sm:w-7 sm:h-8 text-[#183b32]"
-              viewBox="0 0 24 30"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="1.5"
-            >
-              <path d="M4 28V12C4 7.58172 7.58172 4 12 4C16.4183 4 20 7.58172 20 12V28" strokeLinecap="round" />
-              <path d="M7 28V13C7 10.2386 9.23858 8 12 8C14.7614 8 17 10.2386 17 13V28" strokeLinecap="round" strokeWidth="1.1" />
-              <line x1="2" y1="28" x2="22" y2="28" strokeWidth="1.8" strokeLinecap="round" />
-            </svg>
-            <div className="flex flex-col">
-              <span className="font-serif text-lg sm:text-xl font-medium tracking-tight text-[#183b32] leading-none">
-                The Pearl
-              </span>
-              <span className="text-[7px] sm:text-[7.5px] font-bold tracking-[0.2em] text-[#7d756d] uppercase mt-0.5">
-                HOTEL &middot; HYDERABAD
-              </span>
-            </div>
+          {/* Left Brand Logo: The Pearl Hotel Official Logo */}
+          <Link href="/" className="flex items-center group py-0.5">
+            <Image
+              src="/images/pearl_hotel_logo.png"
+              alt="The Pearl Hotel Hyderabad Logo"
+              width={170}
+              height={60}
+              priority
+              className="h-9 sm:h-11 w-auto object-contain transition-transform group-hover:scale-102"
+            />
           </Link>
 
           {/* Center Navigation Links (Desktop) */}
           <nav className="hidden lg:flex items-center gap-7 xl:gap-9 text-xs font-medium text-[#3b4742]">
-            <Link href="/" className="hover:text-[#183b32] transition-colors py-1">
+            <Link href="/" className="hover:text-[#0f263d] transition-colors py-1">
               Home
             </Link>
-            <Link href="#services" className="hover:text-[#183b32] transition-colors py-1">
+            <Link href="#services" className="hover:text-[#0f263d] transition-colors py-1">
               Services
             </Link>
-            <Link href="#about" className="hover:text-[#183b32] transition-colors py-1">
+            <Link href="#about" className="hover:text-[#0f263d] transition-colors py-1">
               About Us
             </Link>
-            <Link href="#facilities" className="hover:text-[#183b32] transition-colors py-1">
+            <Link href="#facilities" className="hover:text-[#0f263d] transition-colors py-1">
               Facilities
             </Link>
           </nav>
@@ -81,7 +70,7 @@ export default function MairaHeroSection() {
                   window.location.hash = "contact";
                 }
               }}
-              className="inline-flex items-center gap-1.5 px-3 sm:px-4 py-1.5 sm:py-2 rounded-full bg-[#183b32] hover:bg-[#122e27] border border-[#b59a6a] text-[#faf7f2] hover:text-white text-[11px] sm:text-xs font-medium tracking-wide transition-all shadow-xs cursor-pointer"
+              className="inline-flex items-center gap-1.5 px-3.5 sm:px-4 py-1.5 sm:py-2 rounded-full bg-[#0f263d] hover:bg-[#091929] border border-[#b59a6a] text-[#faf7f2] hover:text-white text-[11px] sm:text-xs font-medium tracking-wide transition-all shadow-xs cursor-pointer"
             >
               <CalendarCheck size={13} className="text-[#b59a6a] shrink-0" strokeWidth={1.8} />
               <span>Reserve your stay</span>
@@ -91,7 +80,7 @@ export default function MairaHeroSection() {
             <div className="lg:hidden flex items-center">
               <button
                 onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-                className="p-1.5 -mr-1 text-[#183b32] hover:bg-[#f9f6f0] rounded-md transition-colors"
+                className="p-1.5 -mr-1 text-[#0f263d] hover:bg-[#f9f6f0] rounded-md transition-colors"
                 aria-label="Toggle menu"
               >
                 {mobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
@@ -104,10 +93,10 @@ export default function MairaHeroSection() {
         {/* Mobile Navigation Drawer */}
         {mobileMenuOpen && (
           <div className="lg:hidden bg-white border-t border-[#eae6df] px-6 py-5 flex flex-col gap-3.5 text-sm font-medium text-[#3b4742] shadow-lg animate-fadeIn">
-            <Link href="/" onClick={() => setMobileMenuOpen(false)} className="py-1 hover:text-[#183b32]">Home</Link>
-            <Link href="#services" onClick={() => setMobileMenuOpen(false)} className="py-1 hover:text-[#183b32]">Services</Link>
-            <Link href="#about" onClick={() => setMobileMenuOpen(false)} className="py-1 hover:text-[#183b32]">About Us</Link>
-            <Link href="#facilities" onClick={() => setMobileMenuOpen(false)} className="py-1 hover:text-[#183b32]">Facilities</Link>
+            <Link href="/" onClick={() => setMobileMenuOpen(false)} className="py-1 hover:text-[#0f263d]">Home</Link>
+            <Link href="#services" onClick={() => setMobileMenuOpen(false)} className="py-1 hover:text-[#0f263d]">Services</Link>
+            <Link href="#about" onClick={() => setMobileMenuOpen(false)} className="py-1 hover:text-[#0f263d]">About Us</Link>
+            <Link href="#facilities" onClick={() => setMobileMenuOpen(false)} className="py-1 hover:text-[#0f263d]">Facilities</Link>
           </div>
         )}
       </header>
@@ -157,7 +146,7 @@ export default function MairaHeroSection() {
             </div>
 
             {/* Main Headline - Bold Sans-Serif matching reference screenshot */}
-            <h1 className="section-title text-[#183b32] mb-2 sm:mb-3">
+            <h1 className="section-title text-[#0f263d] mb-2 sm:mb-3">
               Welcome to<br />
               The Pearl Hotel in<br />
               <span className="text-[#b59a6a]">Shamshabad</span>
@@ -180,7 +169,7 @@ export default function MairaHeroSection() {
             <div className="grid grid-cols-2 gap-2 sm:flex sm:flex-row items-center w-full sm:w-auto mb-2.5 sm:mb-0">
               <Link
                 href="#contact"
-                className="px-3 py-2.5 sm:px-5 sm:py-3 rounded-lg bg-[#183b32] hover:bg-[#122e27] text-white text-[11px] sm:text-xs font-semibold tracking-wide shadow-xs transition-all flex items-center justify-center gap-1.5 group whitespace-nowrap"
+                className="px-3 py-2.5 sm:px-5 sm:py-3 rounded-lg bg-[#0f263d] hover:bg-[#091929] text-white text-[11px] sm:text-xs font-semibold tracking-wide shadow-xs transition-all flex items-center justify-center gap-1.5 group whitespace-nowrap"
               >
                 <span>Book your stay now</span>
                 <ArrowRight size={13} className="group-hover:translate-x-1 transition-transform" />
@@ -190,7 +179,7 @@ export default function MairaHeroSection() {
                 href="https://wa.me/919700000970"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="px-3 py-2.5 sm:px-5 sm:py-3 rounded-lg bg-white hover:bg-[#f3eee5] border border-[#183b32]/35 text-[#183b32] text-[11px] sm:text-xs font-semibold tracking-wide transition-all flex items-center justify-center gap-1.5 shadow-xs whitespace-nowrap"
+                className="px-3 py-2.5 sm:px-5 sm:py-3 rounded-lg bg-white hover:bg-[#f3eee5] border border-[#0f263d]/35 text-[#0f263d] text-[11px] sm:text-xs font-semibold tracking-wide transition-all flex items-center justify-center gap-1.5 shadow-xs whitespace-nowrap"
               >
                 <MessageCircle size={15} className="text-[#25D366]" />
                 <span>WhatsApp us</span>

@@ -42,13 +42,13 @@ export default function AboutUsSection() {
             </span>
 
             {/* Hotel name heading - Bold Sans-Serif */}
-            <h2 className="section-title text-[#183b32] mb-5">
+            <h2 className="section-title text-[#0f263d] mb-5">
               The Pearl Hotel Hyderabad
             </h2>
 
             {/* Description */}
             <p className="text-sm sm:text-[15px] text-[#525d58] leading-relaxed mb-4">
-              Conveniently situated at <strong className="text-[#183b32] font-semibold">Sai Pramukh Enclave, Shamshabad</strong>, just minutes from Rajiv Gandhi International Airport (RGIA), <strong className="text-[#b59a6a] font-semibold">The Pearl Hotel Hyderabad</strong> offers a comfortable, elegant, and affordable stay with 47 well-appointed rooms.
+              Conveniently situated at <strong className="text-[#0f263d] font-semibold">Sai Pramukh Enclave, Shamshabad</strong>, just minutes from Rajiv Gandhi International Airport (RGIA), <strong className="text-[#b59a6a] font-semibold">The Pearl Hotel Hyderabad</strong> offers a comfortable, elegant, and affordable stay with 47 well-appointed rooms.
             </p>
             <p className="text-sm sm:text-[15px] text-[#525d58] leading-relaxed mb-8">
               We warmly welcome families, couples, business travellers, tourists, pilgrims, international guests, and groups. With 12:00 noon check-in and check-out, elevator access, 100% power backup, on-site dining, and 24-hour front desk assistance, we ensure your stay near Hyderabad Airport is seamless and pleasant.
