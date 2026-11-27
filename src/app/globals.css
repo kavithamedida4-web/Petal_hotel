@@ -52,19 +52,19 @@
 .section-title {
   font-family: var(--font-serif) !important;
   font-weight: 500 !important;
-  font-size: 28px;
-  line-height: 1.18;
-  letter-spacing: -0.02em;
+  font-size: 24px;
+  line-height: 1.22;
+  letter-spacing: -0.015em;
 }
 
 @media (min-width: 640px) {
   .section-title {
-    font-size: 36px;
+    font-size: 28px;
   }
 }
 
 @media (min-width: 1024px) {
   .section-title {
-    font-size: 44px;
+    font-size: 32px;
   }
 }
