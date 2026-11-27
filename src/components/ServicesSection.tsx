@@ -21,22 +21,22 @@ const services = [
     img: "/images/pearl_suite_room.jpg",
   },
   {
-    title: "In-House Restaurant & Room Service",
+    title: "In-House Restaurant",
     subtitle: "Freshly prepared South & North Indian dishes, daily breakfast buffet, and 24-hr in-room dining.",
     img: "/images/pearl_restaurant.jpg",
   },
   {
-    title: "24-Hour Front Desk & Power Backup",
+    title: "24-Hour Front Desk",
     subtitle: "12:00 noon check-in/out, 100% generator power backup, and round-the-clock reception.",
     img: "/images/pearl_lobby_elevator.jpg",
   },
   {
-    title: "Lift & Free On-Site Parking",
+    title: "Lift & Free Parking",
     subtitle: "Smooth elevator access across all 47 rooms, plus secure vehicle parking with CCTV monitoring.",
     img: "/images/pearl_exterior_night.jpg",
   },
   {
-    title: "Spotless Corridors & CCTV Security",
+    title: "Corridors & Security",
     subtitle: "Bright marble corridors with 24/7 CCTV surveillance across all floors in Shamshabad.",
     img: "/images/pearl_corridor.jpg",
   },
@@ -89,10 +89,10 @@ export default function ServicesSection() {
         {services.map((svc, i) => (
           <div
             key={i}
-            className="snap-start shrink-0 w-[310px] sm:w-[350px] lg:w-[380px] rounded-2xl overflow-hidden flex flex-col cursor-pointer group shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-1.5 bg-white border border-[#eae4da]"
+            className="snap-start shrink-0 w-[310px] sm:w-[350px] lg:w-[380px] rounded-2xl overflow-hidden flex flex-col cursor-pointer group shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-1.5 bg-[#b59a6a] border border-[#d8cca8]"
           >
             {/* Card Photo (Taller & Larger) */}
-            <div className="relative h-[250px] sm:h-[280px] lg:h-[300px] overflow-hidden bg-[#e8e2d8]">
+            <div className="relative h-[250px] sm:h-[280px] lg:h-[300px] overflow-hidden bg-[#e8e2d8] shrink-0">
               <Image
                 src={svc.img}
                 alt={svc.title}
@@ -103,8 +103,8 @@ export default function ServicesSection() {
             </div>
 
             {/* Clean Gold/tan info bar with uniform fixed height across all cards */}
-            <div className="bg-[#b59a6a] px-6 py-4 sm:py-5 min-h-[110px] sm:min-h-[120px] flex flex-col justify-start">
-              <p className="text-white font-serif text-lg sm:text-xl font-medium leading-tight">
+            <div className="bg-[#b59a6a] px-6 py-4 sm:py-5 flex-1 flex flex-col justify-center min-h-[110px] sm:min-h-[120px]">
+              <p className="text-white font-serif text-lg sm:text-xl font-medium leading-tight truncate">
                 {svc.title}
               </p>
               <p className="text-white/95 text-xs sm:text-[13px] mt-2 font-sans leading-relaxed line-clamp-2">
