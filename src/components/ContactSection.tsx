@@ -157,16 +157,16 @@ export default function ContactSection() {
                     <div className="animate-fadeIn">
                       <label className="block text-[11px] sm:text-xs font-semibold text-[#0f263d] mb-1 flex items-center gap-1">
                         <BedDouble size={13} className="text-[#b59a6a]" />
-                        <span>Number of Rooms (1–50)</span> <span className="text-[#b59a6a]">*</span>
+                        <span>Number of Rooms (1–47)</span> <span className="text-[#b59a6a]">*</span>
                       </label>
                       <select
                         value={formData.numberOfRooms}
                         onChange={(e) => setFormData({ ...formData, numberOfRooms: e.target.value })}
                         className="w-full px-3 py-2 rounded-lg sm:rounded-xl bg-[#fcfaf7] border border-[#b59a6a] text-[#0f263d] text-xs sm:text-[13px] focus:outline-none focus:border-[#0f263d] transition-all cursor-pointer font-medium"
                       >
-                        {Array.from({ length: 50 }, (_, i) => i + 1).map((num) => (
+                        {Array.from({ length: 47 }, (_, i) => i + 1).map((num) => (
                           <option key={num} value={`${num} ${num === 1 ? "Room" : "Rooms"}`}>
-                            {num} {num === 1 ? "Room" : "Rooms"}
+                            {num} {num === 1 ? "Room" : num === 47 ? "Rooms (Full Hotel - 47 Rooms)" : "Rooms"}
                           </option>
                         ))}
                       </select>
