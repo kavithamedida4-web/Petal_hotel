@@ -33,15 +33,15 @@ export default function MairaHeroSection() {
             <Image
               src="/images/pearl_hotel_logo.png"
               alt="The Pearl Hotel Hyderabad Logo"
-              width={170}
-              height={60}
+              width={180}
+              height={65}
               priority
-              className="h-9 sm:h-11 w-auto object-contain transition-transform group-hover:scale-102"
+              className="h-10 sm:h-12 w-auto object-contain transition-transform group-hover:scale-102"
             />
           </Link>
 
-          {/* Center Navigation Links (Desktop) - Dark & High Contrast */}
-          <nav className="hidden lg:flex items-center gap-7 xl:gap-9 text-xs font-semibold text-[#0f263d]">
+          {/* Center Navigation Links (Desktop) - Increased Size & High Contrast */}
+          <nav className="hidden lg:flex items-center gap-8 xl:gap-10 text-[15px] font-semibold text-[#0f263d] tracking-wide">
             <Link href="/" className="hover:text-[#b59a6a] transition-colors py-1 focus:outline-none">
               Home
             </Link>
@@ -70,9 +70,9 @@ export default function MairaHeroSection() {
                   window.location.hash = "contact";
                 }
               }}
-              className="inline-flex items-center gap-1.5 px-3.5 sm:px-4 py-1.5 sm:py-2 rounded-full bg-[#0f263d] hover:bg-[#091929] border border-[#b59a6a] text-[#faf7f2] hover:text-white text-[11px] sm:text-xs font-medium tracking-wide transition-all shadow-xs cursor-pointer focus:outline-none"
+              className="inline-flex items-center gap-2 px-4 sm:px-5 py-2 sm:py-2.5 rounded-full bg-[#0f263d] hover:bg-[#091929] border border-[#b59a6a] text-[#faf7f2] hover:text-white text-xs sm:text-[13px] font-semibold tracking-wide transition-all shadow-xs cursor-pointer focus:outline-none"
             >
-              <CalendarCheck size={13} className="text-[#b59a6a] shrink-0" strokeWidth={1.8} />
+              <CalendarCheck size={15} className="text-[#b59a6a] shrink-0" strokeWidth={2} />
               <span>Reserve your stay</span>
             </a>
 
@@ -83,7 +83,7 @@ export default function MairaHeroSection() {
                 className="p-1.5 -mr-1 text-[#0f263d] hover:bg-[#eae6df] rounded-md transition-colors focus:outline-none"
                 aria-label="Toggle menu"
               >
-                {mobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
+                {mobileMenuOpen ? <X size={26} /> : <Menu size={26} />}
               </button>
             </div>
           </div>
@@ -92,7 +92,7 @@ export default function MairaHeroSection() {
 
         {/* Mobile Navigation Drawer */}
         {mobileMenuOpen && (
-          <div className="lg:hidden bg-white border-t border-[#eae6df] px-6 py-5 flex flex-col gap-3.5 text-sm font-semibold text-[#0f263d] shadow-lg animate-fadeIn">
+          <div className="lg:hidden bg-white border-t border-[#eae6df] px-6 py-5 flex flex-col gap-4 text-base font-semibold text-[#0f263d] shadow-lg animate-fadeIn">
             <Link href="/" onClick={() => setMobileMenuOpen(false)} className="py-1 hover:text-[#b59a6a] focus:outline-none">Home</Link>
             <Link href="#services" onClick={() => setMobileMenuOpen(false)} className="py-1 hover:text-[#b59a6a] focus:outline-none">Services</Link>
             <Link href="#about" onClick={() => setMobileMenuOpen(false)} className="py-1 hover:text-[#b59a6a] focus:outline-none">About Us</Link>
