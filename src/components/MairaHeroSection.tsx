@@ -24,14 +24,14 @@ export default function MairaHeroSection() {
   return (
     <div className="w-full bg-[#f9f6f0] text-[#0f263d] relative overflow-x-hidden">
 
-      {/* Top Navigation Bar */}
-      <header className="w-full bg-[#f9f6f0] border-b border-[#eae6df] sticky top-0 z-50">
+      {/* Top Navigation Bar - Luxury Dark Navy Scheme */}
+      <header className="w-full bg-[#0f263d] border-b border-[#b59a6a]/20 sticky top-0 z-50 shadow-md">
         <div className="w-full px-5 sm:px-8 lg:px-14 xl:px-20 2xl:px-28 py-2.5 sm:py-3 flex items-center justify-between">
 
-          {/* Left Brand Logo: The Pearl Hotel Official Logo */}
-          <Link href="/" className="flex items-center group py-0.5">
+          {/* Left Brand Logo: The Pearl Hotel Official Logo (White & Gold version) */}
+          <Link href="/" className="flex items-center group py-0.5 focus:outline-none">
             <Image
-              src="/images/pearl_hotel_logo.png"
+              src="/images/pearl_hotel_logo_white.png"
               alt="The Pearl Hotel Hyderabad Logo"
               width={170}
               height={60}
@@ -41,17 +41,17 @@ export default function MairaHeroSection() {
           </Link>
 
           {/* Center Navigation Links (Desktop) */}
-          <nav className="hidden lg:flex items-center gap-7 xl:gap-9 text-xs font-medium text-[#3b4742]">
-            <Link href="/" className="hover:text-[#0f263d] transition-colors py-1">
+          <nav className="hidden lg:flex items-center gap-7 xl:gap-9 text-xs font-medium text-gray-200">
+            <Link href="/" className="hover:text-[#b59a6a] transition-colors py-1 focus:outline-none">
               Home
             </Link>
-            <Link href="#services" className="hover:text-[#0f263d] transition-colors py-1">
+            <Link href="#services" className="hover:text-[#b59a6a] transition-colors py-1 focus:outline-none">
               Services
             </Link>
-            <Link href="#about" className="hover:text-[#0f263d] transition-colors py-1">
+            <Link href="#about" className="hover:text-[#b59a6a] transition-colors py-1 focus:outline-none">
               About Us
             </Link>
-            <Link href="#facilities" className="hover:text-[#0f263d] transition-colors py-1">
+            <Link href="#facilities" className="hover:text-[#b59a6a] transition-colors py-1 focus:outline-none">
               Facilities
             </Link>
           </nav>
@@ -70,9 +70,9 @@ export default function MairaHeroSection() {
                   window.location.hash = "contact";
                 }
               }}
-              className="inline-flex items-center gap-1.5 px-3.5 sm:px-4 py-1.5 sm:py-2 rounded-full bg-[#0f263d] hover:bg-[#091929] border border-[#b59a6a] text-[#faf7f2] hover:text-white text-[11px] sm:text-xs font-medium tracking-wide transition-all shadow-xs cursor-pointer"
+              className="inline-flex items-center gap-1.5 px-3.5 sm:px-4 py-1.5 sm:py-2 rounded-full bg-[#b59a6a] hover:bg-[#a08556] text-[#0f263d] hover:text-[#091929] text-[11px] sm:text-xs font-semibold tracking-wide transition-all shadow-md cursor-pointer focus:outline-none"
             >
-              <CalendarCheck size={13} className="text-[#b59a6a] shrink-0" strokeWidth={1.8} />
+              <CalendarCheck size={13} className="text-[#0f263d] shrink-0" strokeWidth={2.2} />
               <span>Reserve your stay</span>
             </a>
 
@@ -80,7 +80,7 @@ export default function MairaHeroSection() {
             <div className="lg:hidden flex items-center">
               <button
                 onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-                className="p-1.5 -mr-1 text-[#0f263d] hover:bg-[#f9f6f0] rounded-md transition-colors"
+                className="p-1.5 -mr-1 text-white hover:bg-white/10 rounded-md transition-colors focus:outline-none"
                 aria-label="Toggle menu"
               >
                 {mobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
@@ -92,11 +92,11 @@ export default function MairaHeroSection() {
 
         {/* Mobile Navigation Drawer */}
         {mobileMenuOpen && (
-          <div className="lg:hidden bg-white border-t border-[#eae6df] px-6 py-5 flex flex-col gap-3.5 text-sm font-medium text-[#3b4742] shadow-lg animate-fadeIn">
-            <Link href="/" onClick={() => setMobileMenuOpen(false)} className="py-1 hover:text-[#0f263d]">Home</Link>
-            <Link href="#services" onClick={() => setMobileMenuOpen(false)} className="py-1 hover:text-[#0f263d]">Services</Link>
-            <Link href="#about" onClick={() => setMobileMenuOpen(false)} className="py-1 hover:text-[#0f263d]">About Us</Link>
-            <Link href="#facilities" onClick={() => setMobileMenuOpen(false)} className="py-1 hover:text-[#0f263d]">Facilities</Link>
+          <div className="lg:hidden bg-[#091929] border-t border-white/10 px-6 py-5 flex flex-col gap-3.5 text-sm font-medium text-gray-200 shadow-xl animate-fadeIn">
+            <Link href="/" onClick={() => setMobileMenuOpen(false)} className="py-1 hover:text-[#b59a6a]">Home</Link>
+            <Link href="#services" onClick={() => setMobileMenuOpen(false)} className="py-1 hover:text-[#b59a6a]">Services</Link>
+            <Link href="#about" onClick={() => setMobileMenuOpen(false)} className="py-1 hover:text-[#b59a6a]">About Us</Link>
+            <Link href="#facilities" onClick={() => setMobileMenuOpen(false)} className="py-1 hover:text-[#b59a6a]">Facilities</Link>
           </div>
         )}
       </header>
