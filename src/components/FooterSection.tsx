@@ -205,15 +205,10 @@ export default function FooterSection() {
 
         </div>
 
-        {/* Accepted Payment Methods and Domain Info */}
-        <div className="py-4 border-t border-b border-white/10 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-[#8e95a5]">
-          <div className="flex flex-wrap items-center justify-center sm:justify-start gap-2 text-center sm:text-left">
-            <span className="text-white font-medium">Accepted Payments:</span>
-            <span>Cash &bull; UPI (GPay / PhonePe / Paytm) &bull; Debit / Credit Cards &bull; Net Banking</span>
-          </div>
-          <div className="text-[11px] text-[#b59a6a] font-medium tracking-wide">
-            Domain: pearlhotelhyderabad.com
-          </div>
+        {/* Accepted Payment Methods */}
+        <div className="py-4 border-t border-b border-white/10 flex flex-col sm:flex-row items-center justify-center sm:justify-start gap-2 text-xs text-[#8e95a5] text-center sm:text-left">
+          <span className="text-white font-medium">Accepted Payments:</span>
+          <span>Cash &bull; UPI (GPay / PhonePe / Paytm) &bull; Debit / Credit Cards &bull; Net Banking</span>
         </div>
 
         {/* Bottom Sub-footer */}
