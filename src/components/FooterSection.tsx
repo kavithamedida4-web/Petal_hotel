@@ -147,8 +147,8 @@ export default function FooterSection() {
                   <Phone size={16} />
                 </div>
                 <div className="flex flex-col gap-0.5">
-                  <a href="tel:+919700000970" className="text-white font-medium hover:text-[#b59a6a] transition-colors tracking-wide">
-                    +91 97000 00970
+                  <a href="tel:+918106665517" className="text-white font-medium hover:text-[#b59a6a] transition-colors tracking-wide">
+                    +91 81066 65517
                   </a>
                 </div>
               </div>
@@ -224,7 +224,7 @@ export default function FooterSection() {
 
       {/* Floating Sticky WhatsApp Pill Button in Bottom Right */}
       <a
-        href="https://wa.me/919700000970"
+        href="https://wa.me/918106665517"
         target="_blank"
         rel="noopener noreferrer"
         className="fixed bottom-6 right-6 z-50 px-4 py-2.5 rounded-full bg-[#00a884] hover:bg-[#008f6f] text-white text-xs font-semibold tracking-wide shadow-2xl flex items-center gap-2 transition-all hover:scale-105 active:scale-95 cursor-pointer"

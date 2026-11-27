@@ -166,7 +166,7 @@ export default function MairaHeroSection() {
               </Link>
 
               <Link
-                href="https://wa.me/919700000970"
+                href="https://wa.me/918106665517"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="px-3 py-2.5 sm:px-5 sm:py-3 rounded-lg bg-white hover:bg-[#f3eee5] border border-[#0f263d]/35 text-[#0f263d] text-[11px] sm:text-xs font-semibold tracking-wide transition-all flex items-center justify-center gap-1.5 shadow-xs whitespace-nowrap"

@@ -14,7 +14,7 @@ const faqs = [
     id: 2,
     question: "What are the standard check-in and check-out timings?",
     answer:
-      "Both check-in and check-out are at 12:00 noon. If you need early check-in or late check-out due to flight timings, please connect with our front desk on WhatsApp (+91 97000 00970) in advance.",
+      "Both check-in and check-out are at 12:00 noon. If you need early check-in or late check-out due to flight timings, please connect with our front desk on WhatsApp (+91 81066 65517) in advance.",
   },
   {
     id: 3,
@@ -32,7 +32,7 @@ const faqs = [
     id: 5,
     question: "What is your cancellation and date change policy?",
     answer:
-      "For cancellations or date changes, please contact the hotel directly at +91 97000 00970. Cancellation charges may apply depending on the booking terms and how early you notify us.",
+      "For cancellations or date changes, please contact the hotel directly at +91 81066 65517. Cancellation charges may apply depending on the booking terms and how early you notify us.",
   },
   {
     id: 6,
@@ -50,7 +50,7 @@ const faqs = [
     id: 8,
     question: "How can I book a room or contact hotel reception?",
     answer:
-      "You can call or WhatsApp our guest reception directly at +91 97000 00970, or email info@pearlhotelhyderabad.com for instant direct booking with zero commission fees.",
+      "You can call or WhatsApp our guest reception directly at +91 81066 65517, or email info@pearlhotelhyderabad.com for instant direct booking with zero commission fees.",
   },
   {
     id: 9,
